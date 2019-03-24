@@ -7,6 +7,8 @@
           "node": "10"
         }
       }
-    ], "@babel/preset-react"
+    ], 
+    "@babel/preset-react",
+    "@babel/preset-typescript"
   ]
 }

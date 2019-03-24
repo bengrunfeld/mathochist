@@ -9,6 +9,9 @@ exports[`<App /> matches the snapshot 1`] = `
     <p>
       Check if snapshot breaks
     </p>
+    <h3>
+      Next check
+    </h3>
   </div>
 </App>
 `;
