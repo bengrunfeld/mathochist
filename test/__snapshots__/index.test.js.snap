@@ -6,6 +6,9 @@ exports[`<App /> matches the snapshot 1`] = `
     <h1>
       React Works
     </h1>
+    <p>
+      Check if snapshot breaks
+    </p>
   </div>
 </App>
 `;
