@@ -35,12 +35,5 @@ module.exports = {
         use: [{loader: "html-loader"}]
       }
     ]
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./index.html",
-      filename: "./index.html",
-      excludeChunks: [ 'server' ]
-    })
-  ]
+  }
 }
