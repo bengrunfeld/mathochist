@@ -1,3 +1,8 @@
-const logger = msg => console.log(msg)
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-logger('Hello, world')
+ReactDOM.render(
+  <App />,
+  document.getElementById('react-container') // eslint-disable-line no-undef
+)

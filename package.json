@@ -4,7 +4,7 @@
   "description": "Test enzyme-to-json integration in Jest tested apps\"",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "build": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
     "start": "node ./dist/server.js"
   },
@@ -28,6 +28,11 @@
     "express": "^4.16.4",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
+  },
+  "jest": {
+    "setupFiles": [
+      "./setup.js"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
