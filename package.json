@@ -1,0 +1,25 @@
+{
+  "name": "jest-test",
+  "version": "1.0.0",
+  "description": "Test enzyme-to-json integration in Jest tested apps\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bengrunfeld/jest-test.git"
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "enzyme",
+    "snapshot"
+  ],
+  "author": "bengrunfeld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bengrunfeld/jest-test/issues"
+  },
+  "homepage": "https://github.com/bengrunfeld/jest-test#readme"
+}
