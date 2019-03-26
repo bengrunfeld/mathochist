@@ -1,6 +1,8 @@
 import React from 'react'
 import './styles.css'
 
+let deleteMe
+
 const App = () => (
   <div>
     <h1>Personal Blog</h1>
