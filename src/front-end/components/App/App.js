@@ -3,10 +3,9 @@ import './styles.css'
 
 const App = () => (
   <div>
-    <h1>React Works</h1>
+    <h1>Personal Blog</h1>
     <div className='selfie'></div>
-    <p>Check if snapshot breaks</p>
-    <h3>Next check</h3>
+    <p>Image and some text</p>
   </div>
 )
 

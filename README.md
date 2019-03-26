@@ -4,9 +4,8 @@ Try to find where `enzyme-to-json` is breaking. Seems to be a package collision 
 
 # Testing approach
 
-1. Main server setup
-2. Dev and prod builds
-3. Other packages
+1. Dev and prod builds
+2. Other packages
 
 # List of Things to Test
 

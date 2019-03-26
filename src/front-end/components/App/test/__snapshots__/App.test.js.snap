@@ -4,14 +4,14 @@ exports[`<App /> matches the snapshot 1`] = `
 <App>
   <div>
     <h1>
-      React Works
+      Personal Blog
     </h1>
+    <div
+      className="selfie"
+    />
     <p>
-      Check if snapshot breaks
+      Image and some text
     </p>
-    <h3>
-      Next check
-    </h3>
   </div>
 </App>
 `;
