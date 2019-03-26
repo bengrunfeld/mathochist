@@ -1,16 +1,16 @@
 module.exports = {
-  "plugins": [ "react", "jest" ],
+  "plugins": [ "react", "jest" ], 
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
   ],
-  "parser": "babel-eslint",
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "extends": ["plugin:jest/recommended"]
+  "parser": "babel-eslint"
+  // "settings": {
+  //   "react": {
+  //     "version": "detect"
+  //   }
+  // },
+  // "extends": ["plugin:jest/recommended"]
 };
 
 
