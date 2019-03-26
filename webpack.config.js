@@ -1,9 +1,10 @@
 const path = require("path")
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
+
 module.exports = {
   entry: {
-    main: './index.js'
+    main: './src/front-end/index.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -14,6 +15,17 @@ module.exports = {
   devtool: '#source-map',
   module: {
     rules: [
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          emitWarning: true,
+          failOnError: false,
+          failOnWarning: false
+        }
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -42,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./index.html",
+      template: "./src/front-end/html/index.html",
       filename: "./index.html",
       excludeChunks: [ 'server' ]
     })
