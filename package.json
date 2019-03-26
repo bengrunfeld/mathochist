@@ -1,17 +1,17 @@
 {
-  "name": "jest-test",
+  "name": "website",
   "version": "1.0.0",
   "description": "Test enzyme-to-json integration in Jest tested apps\"",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "updateSnapshot": "jest --updateSnapshot",
+    "snap": "jest --updateSnapshot",
     "build": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
     "start": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bengrunfeld/jest-test.git"
+    "url": "git+https://github.com/bengrunfeld/website.git"
   },
   "keywords": [
     "jest",
@@ -22,13 +22,13 @@
   "author": "bengrunfeld",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bengrunfeld/jest-test/issues"
+    "url": "https://github.com/bengrunfeld/website/issues"
   },
-  "homepage": "https://github.com/bengrunfeld/jest-test#readme",
+  "homepage": "https://github.com/bengrunfeld/website#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "react": "next",
-    "react-dom": "next"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
   },
   "jest": {
     "setupFiles": [

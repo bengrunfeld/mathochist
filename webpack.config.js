@@ -1,9 +1,10 @@
 const path = require("path")
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
+
 module.exports = {
   entry: {
-    main: './index.js'
+    main: './src/front-end/index.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -53,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./index.html",
+      template: "./src/front-end/html/index.html",
       filename: "./index.html",
       excludeChunks: [ 'server' ]
     })
