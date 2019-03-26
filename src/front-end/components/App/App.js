@@ -1,6 +1,13 @@
 import React from 'react'
 import './styles.css'
 
+import 'bootstrap'
+
+import '../../css/resets.css'
+import '../../css/fonts.css'
+import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+
 const App = () => {
   console.log('This should issue a warning')
 

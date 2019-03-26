@@ -50,6 +50,17 @@ module.exports = {
       {
        test: /\.(png|svg|jpg|gif)$/,
        use: ['file-loader']
+      },
+      {
+        // Imports fonts and stores them in dist/fonts          
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
+          }
+        }]
       }
     ]
   },
