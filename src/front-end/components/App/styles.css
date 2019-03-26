@@ -1,3 +1,11 @@
 h1 {
   color: darkblue;
 }
+
+.selfie {
+  background: url(../../img/smiley.jpg);
+  background-size: 150px;
+  background-repeat-y: no-repeat;
+  width: 150px;
+  height: 128px;
+}
