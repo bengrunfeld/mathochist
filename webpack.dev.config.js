@@ -1,9 +1,10 @@
 const path = require("path")
+const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   entry: {
-    main: './src/front-end/index.js'
+    main: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000', './src/front-end/index.js']
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -12,6 +13,7 @@ module.exports = {
   },
   target: 'web',
   devtool: '#source-map',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -56,6 +58,8 @@ module.exports = {
       template: "./src/front-end/html/index.html",
       filename: "./index.html",
       excludeChunks: [ 'server' ]
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 }

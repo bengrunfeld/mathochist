@@ -10,8 +10,11 @@ exports[`<App /> matches the snapshot 1`] = `
       className="selfie"
     />
     <p>
-      Image and some text
+      Image and some text - pass snap test
     </p>
+    <h2>
+      A nice subtitle
+    </h2>
   </div>
 </App>
 `;
