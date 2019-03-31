@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import MainContent from '../MainContent'
+import Footer from '../Footer'
 
 import './styles.css'
 
@@ -11,15 +12,12 @@ import '../../css/fonts.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
-const App = () => {
-  console.log('This should issue a warning')
-
-  return (
-    <div>
-      <Navbar />
-      <MainContent />
-    </div>
-  )
-}
+const App = () => (
+  <div>
+    <Navbar />
+    <MainContent />
+    <Footer />
+  </div>
+)
 
 export default App

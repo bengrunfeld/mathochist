@@ -151,13 +151,88 @@ exports[`<App /> matches the snapshot 1`] = `
     </Navbar>
     <MainContent>
       <div
-        className="page-layout"
+        className="container-fluid"
       >
-        <p>
-          Main Content
-        </p>
+        <div
+          className="row"
+        >
+          <Sidebar>
+            <div
+              className="col-6"
+            >
+              <h3>
+                Sidebar
+              </h3>
+            </div>
+          </Sidebar>
+          <Post>
+            <div
+              className="col-6"
+            >
+              <h3>
+                Post
+              </h3>
+            </div>
+          </Post>
+        </div>
       </div>
     </MainContent>
+    <Footer>
+      <div
+        className="container-fluid"
+      >
+        <styled.div
+          className="row"
+        >
+          <StyledComponent
+            className="row"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "bkOnsN",
+                  "rules": Array [
+                    "
+  background: #101089;
+  width: 100%;
+  height: 150px;
+  color: white;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="row sc-bwzfXH bkOnsN"
+            >
+              <div
+                className="col-12"
+              >
+                <h2>
+                  Footer
+                </h2>
+                <p>
+                  Other text
+                </p>
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </Footer>
   </div>
 </App>
 `;
