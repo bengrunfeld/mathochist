@@ -4,17 +4,24 @@ exports[`<App /> matches the snapshot 1`] = `
 <App>
   <div>
     <h1>
-      Personal Blog
+      Ben's App
     </h1>
-    <div
-      className="selfie"
-    />
-    <p>
-      Image and some text - pass snap test
-    </p>
-    <h2>
-      A nice subtitle
-    </h2>
+    <Navbar>
+      <div>
+        <p>
+          Navbar
+        </p>
+      </div>
+    </Navbar>
+    <PageLayout>
+      <div
+        className="page-layout"
+      >
+        <p>
+          Page Layout
+        </p>
+      </div>
+    </PageLayout>
   </div>
 </App>
 `;

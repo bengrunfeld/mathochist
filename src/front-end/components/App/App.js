@@ -1,4 +1,7 @@
 import React from 'react'
+import Navbar from '../Navbar'
+import PageLayout from '../PageLayout'
+
 import './styles.css'
 
 import 'bootstrap'
@@ -12,12 +15,12 @@ const App = () => {
   console.log('This should issue a warning')
 
   return (
-  <div>
-    <h1>Personal Blog</h1>
-    <div className='selfie'></div>
-    <p>Image and some text - pass snap test</p>
-    <h2>A nice subtitle</h2>
-  </div>
-)}
+    <div>
+      <h1>Ben's App</h1>
+      <Navbar />
+      <PageLayout />
+    </div>
+  )
+}
 
 export default App
