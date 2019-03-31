@@ -16,7 +16,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Ben's App</h1>
       <Navbar />
       <PageLayout />
     </div>
