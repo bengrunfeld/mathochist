@@ -149,15 +149,15 @@ exports[`<App /> matches the snapshot 1`] = `
         </div>
       </nav>
     </Navbar>
-    <PageLayout>
+    <MainContent>
       <div
         className="page-layout"
       >
         <p>
-          Page Layout
+          Main Content
         </p>
       </div>
-    </PageLayout>
+    </MainContent>
   </div>
 </App>
 `;

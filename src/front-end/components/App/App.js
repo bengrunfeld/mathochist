@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
-import PageLayout from '../PageLayout'
+import MainContent from '../MainContent'
 
 import './styles.css'
 
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <PageLayout />
+      <MainContent />
     </div>
   )
 }
