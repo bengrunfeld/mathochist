@@ -18,15 +18,22 @@ router.get('/api/posts/:postId', (req, res) => {
   res.json(content)
 })
 
-// Home page
-router.get('/', (req, res) => { res.sendFile(HTML_FILE) })
-
-// Assets from the Dist folder
-router.get('*', (req, res) => {
-  res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
+// Main pages - e.g. /about
+router.get('/:page', (req, res) => { 
+  console.log('\n-->> 2.', req.params)
+  res.sendFile(HTML_FILE) 
 })
 
-app.use(express.static(DIST_DIR))
+// Post pages - e.g. /posts/redux
+router.get('/posts/:page', (req, res) => { 
+  console.log('\n-->> 3.', req.params)
+  res.sendFile(HTML_FILE) 
+})
 
+// Assets from the Dist folder - e.g. font files
+router.get('*', (req, res) => {
+  console.log('\n-->> 3.', req.params)
+  res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
+})
 
 export default router

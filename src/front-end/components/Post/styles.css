@@ -1,0 +1,29 @@
+.post h1, .post h2, .post h3 {
+  font-family: comfortaa, helvetica;
+}
+
+.post h4, .post p {
+  font-family: nunito, helvetica;
+}
+
+.post h1 {
+  margin-bottom: 25px;
+}
+
+.post h2, .post h3 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.post h2 {
+  font-size: 1.5rem;
+}
+
+.post h3 {
+  font-size: 1.25rem;
+}
+
+.post pre {
+  padding:25px;
+  background: #e3e3e3;
+}
