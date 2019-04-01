@@ -6,7 +6,7 @@ import './styles.css'
 
 
 const sendRequest = async(postId, updateState) => 
-  await fetch(`/api/posts/${postId}`) // eslint-disable-line no-undef  
+  await fetch(`/api/post/${postId}`) // eslint-disable-line no-undef  
     .then(resp => resp.json())
     .then(data => updateState(data))
 

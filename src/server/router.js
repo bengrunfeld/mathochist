@@ -10,7 +10,7 @@ const router = express.Router(),
 app.use(express.static(DIST_DIR))
 
 // Markdown docs
-router.get('/api/posts/:postId', (req, res) => {
+router.get('/api/post/:postId', (req, res) => {
   const content = fs.readFileSync(`./src/content/${req.params.postId}.md`, 'utf8')
 
   res.setHeader('Content-Type', 'application/json')
@@ -20,7 +20,7 @@ router.get('/api/posts/:postId', (req, res) => {
 // Main pages - e.g. /page/about
 router.get('/page/:page', (req, res) => { res.sendFile(HTML_FILE) })
 
-// Post pages - e.g. /posts/redux
+// Post pages - e.g. /post/redux
 router.get('/post/:post', (req, res) => { res.sendFile(HTML_FILE) })
 
 // Assets from the Dist folder - e.g. font files
