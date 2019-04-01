@@ -20,7 +20,6 @@ const Post = ({postId}) => {
 
   return (
     <div className='post col-lg-10'>
-      <p>Post ID: {postId}</p>
       <ReactMarkdown source={state} />
     </div>
   )

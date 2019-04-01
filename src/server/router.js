@@ -19,20 +19,24 @@ router.get('/api/posts/:postId', (req, res) => {
 })
 
 // Main pages - e.g. /about
-router.get('/:page', (req, res) => { 
+router.get('/page/:page', (req, res) => { 
   console.log('\n-->> 2.', req.params)
   res.sendFile(HTML_FILE) 
 })
 
 // Post pages - e.g. /posts/redux
-router.get('/posts/:page', (req, res) => { 
+router.get('/posts/:post', (req, res) => { 
   console.log('\n-->> 3.', req.params)
   res.sendFile(HTML_FILE) 
 })
 
 // Assets from the Dist folder - e.g. font files
 router.get('*', (req, res) => {
-  console.log('\n-->> 3.', req.params)
+  console.log('-->> 4.', req.params)
+
+  if (req.params['0'] === '/' || req.params['0'].slice(0, 2) === '..')
+    return res.sendFile(HTML_FILE)
+  
   res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
 })
 

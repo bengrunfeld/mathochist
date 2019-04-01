@@ -1,18 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Route } from 'react-router-dom'
 import Post from '../Post'
+import About from '../About'
 
 
-const Page = ({postId}) => (
+const Page = () => (
   <section className='col-11 col-lg-9 offset-lg-1 pt-5 mb-5'>
-    <Route exact path={`/posts/${postId}`} render={() => <Post postId={postId} />} />
-    {/* <Route path='/about' component={About} /> */}
+    <Route exact path='/page/about' component={About} />
+    <Route exact path='/posts/react' render={() => <Post postId='react' />} />
+    <Route exact path='/posts/redux' render={() => <Post postId='redux' />} />
+    <Route exact path='/posts/immutable' render={() => <Post postId='immutable' />} />
     {/* <Route path='/project' component={Project} /> */}
   </section>
 )
 
-Page.propTypes = { postId: PropTypes.string }
 
 export default Page
 
