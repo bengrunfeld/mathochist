@@ -11,6 +11,7 @@ const LinkItem = styled(NavLink)`
   text-decoration: none;
   display: block;
   height: 38px;
+  font-family: nunito, helvetica;
 
   &:hover {
     color: purple;
