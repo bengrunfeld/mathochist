@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
-import MainContent from '../MainContent'
+import PageLayout from '../PageLayout'
 import Footer from '../Footer'
 
 import './styles.css'
@@ -15,7 +15,7 @@ import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const App = () => (
   <div>
     <Navbar />
-    <MainContent />
+    <PageLayout />
     <Footer />
   </div>
 )

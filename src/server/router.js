@@ -10,7 +10,7 @@ const router = express.Router(),
 app.use(express.static(DIST_DIR))
 
 router.get('/api/posts/:postId', (req, res) => {
-  const content = fs.readFileSync(`./src/content/${req.params.postId}.html`, 'utf8')
+  const content = fs.readFileSync(`./src/content/${req.params.postId}.md`, 'utf8')
 
   res.setHeader('Content-Type', 'application/json')
   res.json(content)
