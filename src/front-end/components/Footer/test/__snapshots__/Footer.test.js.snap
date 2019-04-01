@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> matches the snapshot 1`] = `
+<Footer>
+  <div
+    className="container-fluid"
+  >
+    <styled.div
+      className="row"
+    >
+      <StyledComponent
+        className="row"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": true,
+              "lastClassName": "jhuQOV",
+              "rules": Array [
+                "
+  background: #101089;
+  min-height: 150px;
+  color: lightgray;
+  padding-top: 20px;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="row sc-bdVaJa jhuQOV"
+        >
+          <div
+            className="col-6"
+          >
+            <p>
+              © Ben Grunfeld 2019
+            </p>
+          </div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </div>
+</Footer>
+`;

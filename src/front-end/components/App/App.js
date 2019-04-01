@@ -1,11 +1,22 @@
 import React from 'react'
+import Navbar from '../Navbar'
+import PageLayout from '../PageLayout'
+import Footer from '../Footer'
+
 import './styles.css'
+
+import 'bootstrap'
+
+import '../../css/resets.css'
+import '../../css/fonts.css'
+import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
 
 const App = () => (
   <div>
-    <h1>React Works</h1>
-    <p>Check if snapshot breaks</p>
-    <h3>Next check</h3>
+    <Navbar />
+    <PageLayout />
+    <Footer />
   </div>
 )
 
