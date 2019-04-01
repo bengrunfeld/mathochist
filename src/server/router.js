@@ -10,29 +10,24 @@ const router = express.Router(),
 app.use(express.static(DIST_DIR))
 
 // Markdown docs
-router.get('/api/posts/:postId', (req, res) => {
-  console.log('\n-->> 1.', req.params)
+router.get('/api/post/:postId', (req, res) => {
   const content = fs.readFileSync(`./src/content/${req.params.postId}.md`, 'utf8')
 
   res.setHeader('Content-Type', 'application/json')
   res.json(content)
 })
 
-// Main pages - e.g. /about
-router.get('/:page', (req, res) => { 
-  console.log('\n-->> 2.', req.params)
-  res.sendFile(HTML_FILE) 
-})
+// Main pages - e.g. /page/about
+router.get('/page/:page', (req, res) => { res.sendFile(HTML_FILE) })
 
-// Post pages - e.g. /posts/redux
-router.get('/posts/:page', (req, res) => { 
-  console.log('\n-->> 3.', req.params)
-  res.sendFile(HTML_FILE) 
-})
+// Post pages - e.g. /post/redux
+router.get('/post/:post', (req, res) => { res.sendFile(HTML_FILE) })
 
 // Assets from the Dist folder - e.g. font files
 router.get('*', (req, res) => {
-  console.log('\n-->> 3.', req.params)
+  if (req.params['0'] === '/' || req.params['0'].slice(0, 2) === '..')
+    return res.sendFile(HTML_FILE)
+  
   res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
 })
 
