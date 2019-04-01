@@ -21,7 +21,6 @@ router.get('/api/posts/:postId', (req, res) => {
 // Home page
 router.get('/', (req, res) => { res.sendFile(HTML_FILE) })
 
-
 // Assets from the Dist folder
 router.get('*', (req, res) => {
   res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
