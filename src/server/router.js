@@ -10,14 +10,17 @@ const router = express.Router(),
 app.use(express.static(DIST_DIR))
 
 router.get('/api/posts/:postId', (req, res) => {
+  console.log('\n-->> 1.', req.params)
   const content = fs.readFileSync(`./src/content/${req.params.postId}.md`, 'utf8')
 
   res.setHeader('Content-Type', 'application/json')
   res.json(content)
 })
 
+router.get('/', (req, res) => { res.sendFile(HTML_FILE) })
+
 router.get('*', (req, res) => {
-  res.sendFile(HTML_FILE)
+  res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
 })
 
 app.use(express.static(DIST_DIR))
