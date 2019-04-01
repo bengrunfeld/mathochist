@@ -1,0 +1,29 @@
+h1, h2, h3 {
+  font-family: comfortaa, helvetica;
+}
+
+h4, p {
+  font-family: nunito, helvetica;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+h2, h3 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+pre {
+  padding:25px;
+  background: #e3e3e3;
+}
