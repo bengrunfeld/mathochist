@@ -17,11 +17,11 @@ router.get('/api/posts/:postId', (req, res) => {
   res.json(content)
 })
 
-// Main pages - e.g. /about
+// Main pages - e.g. /page/about
 router.get('/page/:page', (req, res) => { res.sendFile(HTML_FILE) })
 
 // Post pages - e.g. /posts/redux
-router.get('/posts/:post', (req, res) => { res.sendFile(HTML_FILE) })
+router.get('/post/:post', (req, res) => { res.sendFile(HTML_FILE) })
 
 // Assets from the Dist folder - e.g. font files
 router.get('*', (req, res) => {

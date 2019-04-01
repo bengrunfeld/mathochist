@@ -7,9 +7,9 @@ import About from '../About'
 const Page = () => (
   <section className='col-11 col-lg-9 offset-lg-1 pt-5 mb-5'>
     <Route exact path='/page/about' component={About} />
-    <Route exact path='/posts/react' render={() => <Post postId='react' />} />
-    <Route exact path='/posts/redux' render={() => <Post postId='redux' />} />
-    <Route exact path='/posts/immutable' render={() => <Post postId='immutable' />} />
+    <Route exact path='/post/react' render={() => <Post postId='react' />} />
+    <Route exact path='/post/redux' render={() => <Post postId='redux' />} />
+    <Route exact path='/post/immutable' render={() => <Post postId='immutable' />} />
     {/* <Route path='/project' component={Project} /> */}
   </section>
 )

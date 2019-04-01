@@ -10,9 +10,9 @@ const Sidebar = () => (
         <LinkItem exact to='/'>Home</LinkItem>
         <LinkItem to='/page/about'>About</LinkItem>
         <LinkItem to='/page/projects'>Projects</LinkItem>
-        <LinkItem to='/posts/react'>React</LinkItem>
-        <LinkItem to='/posts/redux'>Redux</LinkItem>
-        <LinkItem to='/posts/immutable'>Immutable</LinkItem>
+        <LinkItem to='/post/react'>React</LinkItem>
+        <LinkItem to='/post/redux'>Redux</LinkItem>
+        <LinkItem to='/post/immutable'>Immutable</LinkItem>
       </div>
     </div>
   </Bar>
