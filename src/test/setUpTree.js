@@ -1,7 +1,7 @@
 import React from 'react'
 
-const setUpTree = (Component, Router, mount) => mount(
-  <Router initialEntries={[ { pathname: '/', key: 'testKey' } ]}>
+const setUpTree = (Component, Router, mount, pathname) => mount(
+  <Router initialEntries={[ { pathname, key: 'testKey' } ]}>
     <Component />
   </Router>
 )

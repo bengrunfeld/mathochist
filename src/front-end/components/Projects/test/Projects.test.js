@@ -2,11 +2,12 @@ import React from 'react'
 import Enzyme, { shallow, mount, render } from 'enzyme'
 import { MemoryRouter } from 'react-router-dom'
 
-import About from '../About'
+import Projects from '../Projects'
 
-describe('<About />', () => {
+
+describe('<Projects />', () => {
   test('matches the snapshot', () => {
-    const tree = mount(<About />)
+    const tree = mount(<Projects />)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -2,11 +2,12 @@ import React from 'react'
 import Enzyme, { shallow, mount, render } from 'enzyme'
 import { MemoryRouter } from 'react-router-dom'
 
-import About from '../About'
+import NotFound404 from '../NotFound404'
 
-describe('<About />', () => {
+
+describe('<NotFound404 />', () => {
   test('matches the snapshot', () => {
-    const tree = mount(<About />)
+    const tree = mount(<NotFound404 />)
     expect(tree).toMatchSnapshot()
   })
 })

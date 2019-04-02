@@ -1,0 +1,534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> matches the snapshot 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": "testKey",
+        "pathname": "/",
+      },
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "testKey",
+            "pathname": "/",
+            "search": "",
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "testKey",
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Sidebar>
+      <styled.nav
+        className="col-lg-2 d-none d-lg-block"
+      >
+        <StyledComponent
+          className="col-lg-2 d-none d-lg-block"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": true,
+                "lastClassName": "jznTNH",
+                "rules": Array [
+                  "
+  background: #e3e3e3ff;
+  min-height: 100vh;
+",
+                ],
+              },
+              "displayName": "styled.nav",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": "nav",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <nav
+            className="col-lg-2 d-none d-lg-block sc-bdVaJa jznTNH"
+          >
+            <div
+              className="d-flex flex-column"
+            >
+              <div
+                className="ml-3 mt-5"
+              >
+                <Styled(NavLink)
+                  exact={true}
+                  to="/"
+                >
+                  <StyledComponent
+                    exact={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "jPfoIJ",
+                          "rules": Array [
+                            "
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  font-family: nunito, helvetica;
+
+  &:hover {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px; 
+  }
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(NavLink)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    to="/"
+                  >
+                    <NavLink
+                      className="sc-bwzfXH jPfoIJ"
+                      exact={true}
+                      to="/"
+                    >
+                      <Route
+                        exact={true}
+                        path="\\\\/"
+                      >
+                        <Link
+                          aria-current="page"
+                          className="sc-bwzfXH jPfoIJ active"
+                          style={Object {}}
+                          to="/"
+                        >
+                          <a
+                            aria-current="page"
+                            className="sc-bwzfXH jPfoIJ active"
+                            href="/"
+                            onClick={[Function]}
+                            style={Object {}}
+                          >
+                            Home
+                          </a>
+                        </Link>
+                      </Route>
+                    </NavLink>
+                  </StyledComponent>
+                </Styled(NavLink)>
+                <Styled(NavLink)
+                  to="/page/about"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "jPfoIJ",
+                          "rules": Array [
+                            "
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  font-family: nunito, helvetica;
+
+  &:hover {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px; 
+  }
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(NavLink)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    to="/page/about"
+                  >
+                    <NavLink
+                      className="sc-bwzfXH jPfoIJ"
+                      to="/page/about"
+                    >
+                      <Route
+                        path="\\\\/page\\\\/about"
+                      >
+                        <Link
+                          aria-current={null}
+                          className="sc-bwzfXH jPfoIJ"
+                          to="/page/about"
+                        >
+                          <a
+                            aria-current={null}
+                            className="sc-bwzfXH jPfoIJ"
+                            href="/page/about"
+                            onClick={[Function]}
+                          >
+                            About
+                          </a>
+                        </Link>
+                      </Route>
+                    </NavLink>
+                  </StyledComponent>
+                </Styled(NavLink)>
+                <Styled(NavLink)
+                  to="/page/projects"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "jPfoIJ",
+                          "rules": Array [
+                            "
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  font-family: nunito, helvetica;
+
+  &:hover {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px; 
+  }
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(NavLink)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    to="/page/projects"
+                  >
+                    <NavLink
+                      className="sc-bwzfXH jPfoIJ"
+                      to="/page/projects"
+                    >
+                      <Route
+                        path="\\\\/page\\\\/projects"
+                      >
+                        <Link
+                          aria-current={null}
+                          className="sc-bwzfXH jPfoIJ"
+                          to="/page/projects"
+                        >
+                          <a
+                            aria-current={null}
+                            className="sc-bwzfXH jPfoIJ"
+                            href="/page/projects"
+                            onClick={[Function]}
+                          >
+                            Projects
+                          </a>
+                        </Link>
+                      </Route>
+                    </NavLink>
+                  </StyledComponent>
+                </Styled(NavLink)>
+                <Styled(NavLink)
+                  to="/post/react"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "jPfoIJ",
+                          "rules": Array [
+                            "
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  font-family: nunito, helvetica;
+
+  &:hover {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px; 
+  }
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(NavLink)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    to="/post/react"
+                  >
+                    <NavLink
+                      className="sc-bwzfXH jPfoIJ"
+                      to="/post/react"
+                    >
+                      <Route
+                        path="\\\\/post\\\\/react"
+                      >
+                        <Link
+                          aria-current={null}
+                          className="sc-bwzfXH jPfoIJ"
+                          to="/post/react"
+                        >
+                          <a
+                            aria-current={null}
+                            className="sc-bwzfXH jPfoIJ"
+                            href="/post/react"
+                            onClick={[Function]}
+                          >
+                            React
+                          </a>
+                        </Link>
+                      </Route>
+                    </NavLink>
+                  </StyledComponent>
+                </Styled(NavLink)>
+                <Styled(NavLink)
+                  to="/post/redux"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "jPfoIJ",
+                          "rules": Array [
+                            "
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  font-family: nunito, helvetica;
+
+  &:hover {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px; 
+  }
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(NavLink)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    to="/post/redux"
+                  >
+                    <NavLink
+                      className="sc-bwzfXH jPfoIJ"
+                      to="/post/redux"
+                    >
+                      <Route
+                        path="\\\\/post\\\\/redux"
+                      >
+                        <Link
+                          aria-current={null}
+                          className="sc-bwzfXH jPfoIJ"
+                          to="/post/redux"
+                        >
+                          <a
+                            aria-current={null}
+                            className="sc-bwzfXH jPfoIJ"
+                            href="/post/redux"
+                            onClick={[Function]}
+                          >
+                            Redux
+                          </a>
+                        </Link>
+                      </Route>
+                    </NavLink>
+                  </StyledComponent>
+                </Styled(NavLink)>
+                <Styled(NavLink)
+                  to="/post/immutable"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "jPfoIJ",
+                          "rules": Array [
+                            "
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 38px;
+  font-family: nunito, helvetica;
+
+  &:hover {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px; 
+  }
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+",
+                          ],
+                        },
+                        "displayName": "Styled(NavLink)",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    to="/post/immutable"
+                  >
+                    <NavLink
+                      className="sc-bwzfXH jPfoIJ"
+                      to="/post/immutable"
+                    >
+                      <Route
+                        path="\\\\/post\\\\/immutable"
+                      >
+                        <Link
+                          aria-current={null}
+                          className="sc-bwzfXH jPfoIJ"
+                          to="/post/immutable"
+                        >
+                          <a
+                            aria-current={null}
+                            className="sc-bwzfXH jPfoIJ"
+                            href="/post/immutable"
+                            onClick={[Function]}
+                          >
+                            Immutable
+                          </a>
+                        </Link>
+                      </Route>
+                    </NavLink>
+                  </StyledComponent>
+                </Styled(NavLink)>
+              </div>
+            </div>
+          </nav>
+        </StyledComponent>
+      </styled.nav>
+    </Sidebar>
+  </Router>
+</MemoryRouter>
+`;

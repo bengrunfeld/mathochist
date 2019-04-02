@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Post /> matches the snapshot 1`] = `
+<Post>
+  <div
+    className="post col-lg-10"
+  >
+    <ReactMarkdown
+      astPlugins={Array []}
+      escapeHtml={true}
+      plugins={Array []}
+      rawSourcePos={false}
+      renderers={Object {}}
+      skipHtml={false}
+      source=""
+      sourcePos={false}
+      transformLinkUri={[Function]}
+    >
+      <Root
+        key="root-1-1"
+      />
+    </ReactMarkdown>
+  </div>
+</Post>
+`;
