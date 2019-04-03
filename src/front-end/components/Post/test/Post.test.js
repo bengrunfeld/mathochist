@@ -6,17 +6,24 @@ import { MemoryRouter } from 'react-router-dom'
 import { act } from 'react-dom/test-utils'
 import Post from '../Post'
 
+const content = `
+# Title
+
+This is the first paragraph
+
+This is the second paragraph
+`
 
 describe('<Post />', () => {
   beforeEach(() => fetch.resetMocks())
 
   test('fetches async data correctly', done => {
-    fetch.mockResponseOnce(JSON.stringify('Just some data'))
+    fetch.mockResponseOnce(JSON.stringify(content))
     const tree = mount(<Post />) 
 
     setImmediate(() => {
       tree.update()
-      expect(tree.find('p').length).toEqual(1)
+      expect(tree.find('p').length).toEqual(2)
       done()
     })
   })
