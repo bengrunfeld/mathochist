@@ -10,9 +10,15 @@ import Post from '../Post'
 describe('<Post />', () => {
   beforeEach(() => fetch.resetMocks())
 
-  test('fetches async data correctly', () => {
-    fetch.mockResponseOnce(JSON.stringify({ fakeData: 'Just some data' }))
-    const tree = mount(<Post />)
+  test('fetches async data correctly', done => {
+    fetch.mockResponseOnce(JSON.stringify('Just some data'))
+    const tree = mount(<Post />) 
+
+    setImmediate(() => {
+      tree.update()
+      expect(tree.find('p').length).toEqual(1)
+      done()
+    })
   })
 
 //   test('matches the snapshot', () => {

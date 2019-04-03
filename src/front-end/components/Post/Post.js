@@ -11,16 +11,17 @@ const Post = ({postId}) => {
 
   // The function in useState only fires on the initial render.
   useEffect(() => {
-    
-      // Anon func that runs immediately
-      (async() => 
-        setState(await getPostContent(postId, setState)))()
+
+    // Anon func that runs immediately
+    (async() => 
+      setState(await getPostContent(postId, setState)))()
 
   }, [postId])
 
   return (
     <div className='post col-lg-10'>
-      <ReactMarkdown source={state} />
+      {/* <ReactMarkdown source={state} /> */}
+      <p>{state}</p>
     </div>
   )
 }
