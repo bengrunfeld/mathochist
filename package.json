@@ -1,7 +1,7 @@
 {
-  "name": "website",
-  "version": "1.0.0",
-  "description": "Test enzyme-to-json integration in Jest tested apps\"",
+  "name": "mathochist",
+  "version": "0.0.1",
+  "description": "A math exercise app for masochists",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bengrunfeld/website.git"
+    "url": "https://github.com/bengrunfeld/mathochist"
   },
   "keywords": [
     "jest",
