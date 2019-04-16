@@ -1,12 +1,13 @@
 import React from 'react'
 import Enzyme, { shallow, mount, render } from 'enzyme'
+import { MemoryRouter } from 'react-router-dom'
 
-import Footer from '../Footer'
+import HomePage from '../HomePage'
 
 
-describe('<Footer />', () => {
+describe('<HomePage />', () => {
   test('matches the snapshot', () => {
-    const tree = mount(<Footer />)
+    const tree = mount(<HomePage />)
     expect(tree).toMatchSnapshot()
   })
 })

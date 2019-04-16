@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> matches the snapshot 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": "testKey",
+        "pathname": "/",
+      },
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "testKey",
+            "pathname": "/",
+            "search": "",
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "testKey",
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Navbar>
+      <nav
+        className="navbar navbar-expand-lg navbar-dark bg-dark"
+      >
+        <Styled(Link)
+          className="navbar-brand ml-2"
+          to="/"
+        >
+          <StyledComponent
+            className="navbar-brand ml-2"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": true,
+                  "lastClassName": "buxIHh",
+                  "rules": Array [
+                    "
+  font-family: comfortaa, helvetica;
+  font-size: 26px !important;
+",
+                  ],
+                },
+                "displayName": "Styled(Link)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            to="/"
+          >
+            <Link
+              className="navbar-brand ml-2 sc-bdVaJa buxIHh"
+              to="/"
+            >
+              <a
+                className="navbar-brand ml-2 sc-bdVaJa buxIHh"
+                href="/"
+                onClick={[Function]}
+              >
+                Ben Grunfeld
+              </a>
+            </Link>
+          </StyledComponent>
+        </Styled(Link)>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          className="navbar-toggler"
+          data-target="#navbarSupportedContent"
+          data-toggle="collapse"
+          type="button"
+        >
+          <span
+            className="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          className="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul
+            className="navbar-nav mr-auto d-lg-none"
+          >
+            <li
+              className="nav-item active"
+            >
+              <a
+                className="nav-link"
+                href="#"
+              >
+                Home 
+                <span
+                  className="sr-only"
+                >
+                  (current)
+                </span>
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+              >
+                Link
+              </a>
+            </li>
+            <li
+              className="nav-item dropdown"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                className="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+              >
+                Dropdown
+              </a>
+              <div
+                aria-labelledby="navbarDropdown"
+                className="dropdown-menu"
+              >
+                <a
+                  className="dropdown-item"
+                  href="#"
+                >
+                  Action
+                </a>
+                <a
+                  className="dropdown-item"
+                  href="#"
+                >
+                  Another action
+                </a>
+                <div
+                  className="dropdown-divider"
+                />
+                <a
+                  className="dropdown-item"
+                  href="#"
+                >
+                  Something else here
+                </a>
+              </div>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link disabled"
+                href="#"
+              >
+                Disabled
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </Navbar>
+  </Router>
+</MemoryRouter>
+`;

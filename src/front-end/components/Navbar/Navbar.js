@@ -5,7 +5,7 @@ import { Logo } from './styles'
 
 const Navbar = () => (
   <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-    <Logo className='navbar-brand ml-2' href='#'>Ben Grunfeld</Logo>
+    <Logo className='navbar-brand ml-2' to='/'>Ben Grunfeld</Logo>
 
     <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
       <span className='navbar-toggler-icon'></span>

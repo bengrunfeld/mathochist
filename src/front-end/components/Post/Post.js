@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import ReactMarkdown from 'react-markdown'
+import getPostContent from '../../services/getPostContent'
 
 import './styles.css'
 
-
-const sendRequest = async(postId, updateState) => 
-  await fetch(`/api/post/${postId}`) // eslint-disable-line no-undef  
-    .then(resp => resp.json())
-    .then(data => updateState(data))
 
 const Post = ({postId}) => {
   const [state, setState] = useState('')
 
   // The function in useState only fires on the initial render.
   useEffect(() => {
-    sendRequest(postId, setState)
+
+    // Anon func that runs immediately
+    (async() => 
+      setState(await getPostContent(postId, setState)))()
+
   }, [postId])
 
   return (

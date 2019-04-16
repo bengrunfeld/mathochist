@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFound404 /> matches the snapshot 1`] = `
+<NotFound404>
+  <div>
+    <h1>
+      404 - Not found...
+    </h1>
+  </div>
+</NotFound404>
+`;

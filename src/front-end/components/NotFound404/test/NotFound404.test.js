@@ -1,12 +1,13 @@
 import React from 'react'
 import Enzyme, { shallow, mount, render } from 'enzyme'
+import { MemoryRouter } from 'react-router-dom'
 
-import Footer from '../Footer'
+import NotFound404 from '../NotFound404'
 
 
-describe('<Footer />', () => {
+describe('<NotFound404 />', () => {
   test('matches the snapshot', () => {
-    const tree = mount(<Footer />)
+    const tree = mount(<NotFound404 />)
     expect(tree).toMatchSnapshot()
   })
 })

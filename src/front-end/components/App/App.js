@@ -9,6 +9,7 @@ import 'bootstrap'
 
 import '../../css/resets.css'
 import '../../css/fonts.css'
+import '../../css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
