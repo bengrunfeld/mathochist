@@ -1,33 +1,10 @@
-# Jest Test
+# Mathochist
 
-Try to find where `enzyme-to-json` is breaking. Seems to be a package collision issue.
+Mathochist is a math exercise app which was created to test out the use of several technologies.
 
-# Testing approach
-
-1. Dev and prod builds
-2. Other packages
-
-# List of Things to Test
+## Technologies in Test
 
 * Typescript
-* Eslint
-* Babel
-* @babel/plugin-syntax-dynamic-import
-* @babel/preset-typescript
-* bootstrap
-* express
-* jquery
-* popper.js
-* prop-types
-* react-router-dom
-* styled-components
-* babel-plugin-styled-components
-* jest-styled-components
-* mini-css-extract-plugin
-* optimize-css-assets-webpack-plugin
-* uglifyjs-webpack-plugin
-* webpack-dev-middleware
-* webpack-hot-middleware
-* webpack-node-externals
-
-
+* Immutable
+* Jest
+* Redux
