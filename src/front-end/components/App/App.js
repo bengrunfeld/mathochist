@@ -7,9 +7,9 @@ import './styles.css'
 
 import 'bootstrap'
 
-import '../../css/resets.css'
-import '../../css/fonts.css'
-import '../../css/typography.css'
+import '../../assets/css/resets.css'
+import '../../assets/css/fonts.css'
+import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 

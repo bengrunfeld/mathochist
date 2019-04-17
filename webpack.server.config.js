@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
+
 module.exports = (mode, argv) => {
   const SERVER_PATH = (argv.mode === 'production') ?
      './src/server/server-prod.js' :
