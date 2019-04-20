@@ -11,20 +11,20 @@ import setUpTree from '../../../../test/setUpTree'
 
 
 describe('<App />', () => {
-  test('renders a Navbar', () => {
-    const tree = setUpTree(App, MemoryRouter, mount, '/')
-    expect(tree.find(Navbar)).toHaveLength(1)
-  })
+  // test('renders a Navbar', () => {
+  //   const tree = setUpTree(App, MemoryRouter, mount, '/')
+  //   expect(tree.find(Navbar)).toHaveLength(1)
+  // })
 
-  test('renders a PageLayout', () => {
-    const tree = setUpTree(App, MemoryRouter, mount, '/')
-    expect(tree.find(PageLayout)).toHaveLength(1)
-  })
+  // test('renders a PageLayout', () => {
+  //   const tree = setUpTree(App, MemoryRouter, mount, '/')
+  //   expect(tree.find(PageLayout)).toHaveLength(1)
+  // })
 
-  test('renders a Footer', () => {
-    const tree = setUpTree(App, MemoryRouter, mount, '/')
-    expect(tree.find(Footer)).toHaveLength(1)
-  })
+  // test('renders a Footer', () => {
+  //   const tree = setUpTree(App, MemoryRouter, mount, '/')
+  //   expect(tree.find(Footer)).toHaveLength(1)
+  // })
 
   test('matches the snapshot', () => {
     const tree = setUpTree(App, MemoryRouter, mount, '/')

@@ -4,7 +4,13 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended"
   ],
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true },
+    "project": "./tsconfig.json"  
+  },
   "settings": {
     "react": {
       "version": "detect"
