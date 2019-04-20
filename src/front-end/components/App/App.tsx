@@ -14,19 +14,20 @@ import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 
-const App = () => {
-  const map1 = Map({ a: 1, b: 2, c: 3 })
-  const map2 = map1.set('b', 50)
-  console.log('----------->>> App: Immutable')
-  console.log(map1.get('b') + " vs. " + map2.get('b')) // 2 vs. 50
+export interface MyInfo { name: string; age: number; }
 
-  return (
+
+const App = (props: MyInfo) =>
+  <h1>My name is {props.name} and I am {props.age - 2} years old.</h1>
+
+export default App
+
+
+/* 
+
   <div>
     <Navbar />
     <PageLayout />
     <Footer />
   </div>
-  )
-}
-
-export default App
+*/
