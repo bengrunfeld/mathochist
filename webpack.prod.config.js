@@ -26,7 +26,8 @@ module.exports = {
         options: {
           emitWarning: true,
           failOnError: false,
-          failOnWarning: false
+          failOnWarning: false,
+          fix: true
         }
       },
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
