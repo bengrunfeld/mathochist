@@ -30,7 +30,6 @@
   "dependencies": {
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
-    "@types/react-router": "^4.4.5",
     "@types/react-router-dom": "^4.3.2",
     "@types/webpack-env": "^1.13.9",
     "bootstrap": "^4.3.1",
