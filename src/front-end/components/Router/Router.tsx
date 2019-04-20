@@ -4,7 +4,7 @@ import { BrowserRouter as Router} from 'react-router-dom'
 
 const RouterContainer = () => (
   <Router>
-    <App />
+    <App name='Ben Grunfeld' age='39' />
   </Router>
 )
 

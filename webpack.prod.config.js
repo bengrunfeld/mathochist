@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   entry: {
-    main: './src/front-end/index.js'
+    main: './src/front-end/index.tsx'
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -11,7 +11,11 @@ module.exports = {
     filename: '[name].js'
   },
   target: 'web',
-  devtool: '#source-map',
+  devtool: 'source-map',
+  resolve: {
+    // Add '.ts' and '.tsx' as resolvable extensions.
+    extensions: [".ts", ".tsx", ".js", ".json"]
+  },
   module: {
     rules: [
       {
@@ -25,11 +29,18 @@ module.exports = {
           failOnWarning: false
         }
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader"
-      },
+      // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+
+      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+
+      // Used Previously before we implemented TypeScript
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loader: "babel-loader"
+      // },
       {
         // Loads the javacript into html template provided.
         // Entry point is set below in HtmlWebPackPlugin in Plugins 
@@ -64,7 +75,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/front-end/html/index.html",
+      template: "./src/front-end/assets/html/index.html",
       filename: "./index.html",
       excludeChunks: [ 'server' ]
     })
