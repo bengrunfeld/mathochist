@@ -16,7 +16,7 @@ const LinkItem = styled(NavLink)`
   &:hover {
     color: purple;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   &.active {
@@ -26,7 +26,4 @@ const LinkItem = styled(NavLink)`
   }
 `
 
-export {
-  Bar,
-  LinkItem
-}
+export { Bar, LinkItem }

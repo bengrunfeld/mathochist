@@ -6,6 +6,4 @@ const Logo = styled(Link)`
   font-size: 26px !important;
 `
 
-export {
-  Logo
-}
+export { Logo }

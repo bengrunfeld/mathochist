@@ -7,6 +7,4 @@ const FooterBar = styled.div`
   padding-top: 20px;
 `
 
-export {
-  FooterBar
-}
+export { FooterBar }
