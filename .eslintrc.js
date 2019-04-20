@@ -8,7 +8,7 @@ module.exports = {
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
-    "ecmaFeatures": { "jsx": true },
+    "ecmaFeatures": { "jsx": true }, // Allows for the parsing of JSX
     "project": "./tsconfig.json"  
   },
   "settings": {
@@ -17,8 +17,9 @@ module.exports = {
     }
   },
   "extends": [
+    'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
     "plugin:jest/recommended", 
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended" // Uses the recommended rules from @typescript-eslint/eslint-plugin
   ]
 };
 
