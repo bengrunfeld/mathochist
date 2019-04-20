@@ -1,5 +1,5 @@
 module.exports = {
-  "plugins": [ "react", "jest" ], 
+  "plugins": [ "react", "jest", "@typescript-eslint" ], 
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
@@ -15,8 +15,11 @@ module.exports = {
     "react": {
       "version": "detect"
     }
-  }
-  // "extends": ["plugin:jest/recommended"]
+  },
+  "extends": [
+    "plugin:jest/recommended", 
+    "plugin:@typescript-eslint/recommended"
+  ]
 };
 
 
