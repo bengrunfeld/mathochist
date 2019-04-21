@@ -1,11 +1,12 @@
 import React from 'react'
 import Enzyme, { shallow, mount, render } from 'enzyme'
+import { MemoryRouter } from 'react-router-dom'
 
-import Footer from '../Footer'
+import GameScreen from '../GameScreen'
 
-describe('<Footer />', () => {
+describe('<GameScreen />', () => {
   test('matches the snapshot', () => {
-    const tree = mount(<Footer />)
+    const tree = mount(<GameScreen />)
     expect(tree).toMatchSnapshot()
   })
 })

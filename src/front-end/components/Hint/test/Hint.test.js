@@ -1,11 +1,12 @@
 import React from 'react'
 import Enzyme, { shallow, mount, render } from 'enzyme'
+import { MemoryRouter } from 'react-router-dom'
 
-import Footer from '../Footer'
+import Hint from '../Hint'
 
-describe('<Footer />', () => {
+describe('<Hint />', () => {
   test('matches the snapshot', () => {
-    const tree = mount(<Footer />)
+    const tree = mount(<Hint />)
     expect(tree).toMatchSnapshot()
   })
 })
