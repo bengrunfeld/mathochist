@@ -12,8 +12,8 @@
   },
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
-    "babelCore": "@babel/core", // needed for Babel v7
-    "useCache": true
+    "useCache": true,
+    "babelCore": "@babel/core" // needed for Babel v7
   },
   "include": ["./src/**/*"]
 }
