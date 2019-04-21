@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Bar = styled.nav`
   background: #e3e3e3ff;
-  min-height: 100vh;
+  min-height: 73vh;
 `
 
 const LinkItem = styled(NavLink)`
@@ -16,7 +16,7 @@ const LinkItem = styled(NavLink)`
   &:hover {
     color: purple;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   &.active {
@@ -26,7 +26,4 @@ const LinkItem = styled(NavLink)`
   }
 `
 
-export {
-  Bar,
-  LinkItem
-}
+export { Bar, LinkItem }

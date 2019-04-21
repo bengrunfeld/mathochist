@@ -7,7 +7,7 @@ const PageLayout = () => (
   <div className='container-fluid'>
     <div className='row'>
       <Sidebar />
-      <Page/>
+      <Page />
     </div>
   </div>
 )
