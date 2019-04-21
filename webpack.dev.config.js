@@ -89,7 +89,7 @@ module.exports = {
       excludeChunks: ['server']
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-    new BundleAnalyzerPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
+    // new BundleAnalyzerPlugin()
   ]
 }
