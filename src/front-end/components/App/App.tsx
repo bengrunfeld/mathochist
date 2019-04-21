@@ -13,12 +13,7 @@ import '../../assets/css/fonts.css'
 import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-export interface MyInfo {
-  name: string
-  age: number
-}
-
-const App = (props: MyInfo) => (
+const App = () => (
   <div>
     <Navbar />
     <PageLayout />

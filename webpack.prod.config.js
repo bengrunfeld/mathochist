@@ -1,7 +1,5 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin
 
 module.exports = {
   entry: {
@@ -87,7 +85,6 @@ module.exports = {
       template: './src/front-end/assets/html/index.html',
       filename: './index.html',
       excludeChunks: ['server']
-    }),
-    new BundleAnalyzerPlugin()
+    })
   ]
 }
