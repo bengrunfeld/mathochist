@@ -17,10 +17,10 @@ exports[`<Footer /> matches the snapshot 1`] = `
             "componentStyle": ComponentStyle {
               "componentId": "sc-bdVaJa",
               "isStatic": true,
-              "lastClassName": "jhuQOV",
+              "lastClassName": "iUiJFL",
               "rules": Array [
                 "
-  background: #101089;
+  background: #0e0e58;
   min-height: 150px;
   color: lightgray;
   padding-top: 20px;
@@ -40,7 +40,7 @@ exports[`<Footer /> matches the snapshot 1`] = `
         forwardedRef={null}
       >
         <div
-          className="row sc-bdVaJa jhuQOV"
+          className="row sc-bdVaJa iUiJFL"
         >
           <div
             className="col-6"

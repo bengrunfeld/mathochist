@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameScreen /> matches the snapshot 1`] = `
+<GameScreen>
+  <styled.div
+    className="col-md-6"
+  >
+    <StyledComponent
+      className="col-md-6"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "OGbzu",
+            "rules": Array [
+              "
+  min-height: 73vh;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="col-md-6 sc-bdVaJa OGbzu"
+      >
+        <GameInfo>
+          <div>
+            <h1>
+              GameInfo
+            </h1>
+          </div>
+        </GameInfo>
+        <Hint>
+          <div>
+            <h1>
+              Hint
+            </h1>
+          </div>
+        </Hint>
+        <ProblemBox>
+          <div>
+            <h1>
+              ProblemBox
+            </h1>
+          </div>
+        </ProblemBox>
+        <SolutionInputBox>
+          <div>
+            <h1>
+              SolutionInputBox
+            </h1>
+          </div>
+        </SolutionInputBox>
+        <ResultDisplay>
+          <div>
+            <h1>
+              ResultDisplay
+            </h1>
+          </div>
+        </ResultDisplay>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</GameScreen>
+`;

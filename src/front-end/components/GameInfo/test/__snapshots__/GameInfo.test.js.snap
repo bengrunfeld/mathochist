@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameInfo /> matches the snapshot 1`] = `
+<GameInfo>
+  <div>
+    <h1>
+      GameInfo
+    </h1>
+  </div>
+</GameInfo>
+`;

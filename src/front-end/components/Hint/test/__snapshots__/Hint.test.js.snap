@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<About /> matches the snapshot 1`] = `
-<About>
+exports[`<Hint /> matches the snapshot 1`] = `
+<Hint>
   <div>
     <h1>
-      About
+      Hint
     </h1>
   </div>
-</About>
+</Hint>
 `;

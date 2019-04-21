@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProblemBox /> matches the snapshot 1`] = `
+<ProblemBox>
+  <div>
+    <h1>
+      ProblemBox
+    </h1>
+  </div>
+</ProblemBox>
+`;

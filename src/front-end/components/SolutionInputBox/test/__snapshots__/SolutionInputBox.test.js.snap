@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SolutionInputBox /> matches the snapshot 1`] = `
+<SolutionInputBox>
+  <div>
+    <h1>
+      SolutionInputBox
+    </h1>
+  </div>
+</SolutionInputBox>
+`;

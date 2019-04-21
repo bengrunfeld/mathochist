@@ -50,12 +50,48 @@ exports[`<PageLayout /> matches the snapshot 1`] = `
         <div
           className="row"
         >
-          <Sidebar>
-            <styled.nav
-              className="col-lg-2 d-none d-lg-block"
+          <styled.div
+            className="col-md-3"
+          >
+            <StyledComponent
+              className="col-md-3"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "kMVulJ",
+                    "rules": Array [
+                      "
+  background: #999999;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="col-md-3 sc-bwzfXH kMVulJ"
+              />
+            </StyledComponent>
+          </styled.div>
+          <GameScreen>
+            <styled.div
+              className="col-md-6"
             >
               <StyledComponent
-                className="col-lg-2 d-none d-lg-block"
+                className="col-md-6"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -63,19 +99,18 @@ exports[`<PageLayout /> matches the snapshot 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bdVaJa",
                       "isStatic": true,
-                      "lastClassName": "jznTNH",
+                      "lastClassName": "OGbzu",
                       "rules": Array [
                         "
-  background: #e3e3e3ff;
-  min-height: 100vh;
+  min-height: 73vh;
 ",
                       ],
                     },
-                    "displayName": "styled.nav",
+                    "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
                     "styledComponentId": "sc-bdVaJa",
-                    "target": "nav",
+                    "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
@@ -83,543 +118,84 @@ exports[`<PageLayout /> matches the snapshot 1`] = `
                 }
                 forwardedRef={null}
               >
-                <nav
-                  className="col-lg-2 d-none d-lg-block sc-bdVaJa jznTNH"
+                <div
+                  className="col-md-6 sc-bdVaJa OGbzu"
                 >
-                  <div
-                    className="d-flex flex-column"
-                  >
-                    <div
-                      className="ml-3 mt-5"
-                    >
-                      <Styled(NavLink)
-                        exact={true}
-                        to="/"
-                      >
-                        <StyledComponent
-                          exact={true}
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "jPfoIJ",
-                                "rules": Array [
-                                  "
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 38px;
-  font-family: nunito, helvetica;
-
-  &:hover {
-    color: purple;
-    text-decoration: none;
-    font-size: 20px; 
-  }
-
-  &.active {
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-  }
-",
-                                ],
-                              },
-                              "displayName": "Styled(NavLink)",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": [Function],
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          to="/"
-                        >
-                          <NavLink
-                            className="sc-bwzfXH jPfoIJ"
-                            exact={true}
-                            to="/"
-                          >
-                            <Route
-                              exact={true}
-                              path="\\\\/"
-                            >
-                              <Link
-                                aria-current="page"
-                                className="sc-bwzfXH jPfoIJ active"
-                                style={Object {}}
-                                to="/"
-                              >
-                                <a
-                                  aria-current="page"
-                                  className="sc-bwzfXH jPfoIJ active"
-                                  href="/"
-                                  onClick={[Function]}
-                                  style={Object {}}
-                                >
-                                  Home
-                                </a>
-                              </Link>
-                            </Route>
-                          </NavLink>
-                        </StyledComponent>
-                      </Styled(NavLink)>
-                      <Styled(NavLink)
-                        to="/page/about"
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "jPfoIJ",
-                                "rules": Array [
-                                  "
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 38px;
-  font-family: nunito, helvetica;
-
-  &:hover {
-    color: purple;
-    text-decoration: none;
-    font-size: 20px; 
-  }
-
-  &.active {
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-  }
-",
-                                ],
-                              },
-                              "displayName": "Styled(NavLink)",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": [Function],
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          to="/page/about"
-                        >
-                          <NavLink
-                            className="sc-bwzfXH jPfoIJ"
-                            to="/page/about"
-                          >
-                            <Route
-                              path="\\\\/page\\\\/about"
-                            >
-                              <Link
-                                aria-current={null}
-                                className="sc-bwzfXH jPfoIJ"
-                                to="/page/about"
-                              >
-                                <a
-                                  aria-current={null}
-                                  className="sc-bwzfXH jPfoIJ"
-                                  href="/page/about"
-                                  onClick={[Function]}
-                                >
-                                  About
-                                </a>
-                              </Link>
-                            </Route>
-                          </NavLink>
-                        </StyledComponent>
-                      </Styled(NavLink)>
-                      <Styled(NavLink)
-                        to="/page/projects"
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "jPfoIJ",
-                                "rules": Array [
-                                  "
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 38px;
-  font-family: nunito, helvetica;
-
-  &:hover {
-    color: purple;
-    text-decoration: none;
-    font-size: 20px; 
-  }
-
-  &.active {
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-  }
-",
-                                ],
-                              },
-                              "displayName": "Styled(NavLink)",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": [Function],
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          to="/page/projects"
-                        >
-                          <NavLink
-                            className="sc-bwzfXH jPfoIJ"
-                            to="/page/projects"
-                          >
-                            <Route
-                              path="\\\\/page\\\\/projects"
-                            >
-                              <Link
-                                aria-current={null}
-                                className="sc-bwzfXH jPfoIJ"
-                                to="/page/projects"
-                              >
-                                <a
-                                  aria-current={null}
-                                  className="sc-bwzfXH jPfoIJ"
-                                  href="/page/projects"
-                                  onClick={[Function]}
-                                >
-                                  Projects
-                                </a>
-                              </Link>
-                            </Route>
-                          </NavLink>
-                        </StyledComponent>
-                      </Styled(NavLink)>
-                      <Styled(NavLink)
-                        to="/post/react"
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "jPfoIJ",
-                                "rules": Array [
-                                  "
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 38px;
-  font-family: nunito, helvetica;
-
-  &:hover {
-    color: purple;
-    text-decoration: none;
-    font-size: 20px; 
-  }
-
-  &.active {
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-  }
-",
-                                ],
-                              },
-                              "displayName": "Styled(NavLink)",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": [Function],
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          to="/post/react"
-                        >
-                          <NavLink
-                            className="sc-bwzfXH jPfoIJ"
-                            to="/post/react"
-                          >
-                            <Route
-                              path="\\\\/post\\\\/react"
-                            >
-                              <Link
-                                aria-current={null}
-                                className="sc-bwzfXH jPfoIJ"
-                                to="/post/react"
-                              >
-                                <a
-                                  aria-current={null}
-                                  className="sc-bwzfXH jPfoIJ"
-                                  href="/post/react"
-                                  onClick={[Function]}
-                                >
-                                  React
-                                </a>
-                              </Link>
-                            </Route>
-                          </NavLink>
-                        </StyledComponent>
-                      </Styled(NavLink)>
-                      <Styled(NavLink)
-                        to="/post/redux"
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "jPfoIJ",
-                                "rules": Array [
-                                  "
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 38px;
-  font-family: nunito, helvetica;
-
-  &:hover {
-    color: purple;
-    text-decoration: none;
-    font-size: 20px; 
-  }
-
-  &.active {
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-  }
-",
-                                ],
-                              },
-                              "displayName": "Styled(NavLink)",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": [Function],
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          to="/post/redux"
-                        >
-                          <NavLink
-                            className="sc-bwzfXH jPfoIJ"
-                            to="/post/redux"
-                          >
-                            <Route
-                              path="\\\\/post\\\\/redux"
-                            >
-                              <Link
-                                aria-current={null}
-                                className="sc-bwzfXH jPfoIJ"
-                                to="/post/redux"
-                              >
-                                <a
-                                  aria-current={null}
-                                  className="sc-bwzfXH jPfoIJ"
-                                  href="/post/redux"
-                                  onClick={[Function]}
-                                >
-                                  Redux
-                                </a>
-                              </Link>
-                            </Route>
-                          </NavLink>
-                        </StyledComponent>
-                      </Styled(NavLink)>
-                      <Styled(NavLink)
-                        to="/post/immutable"
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "jPfoIJ",
-                                "rules": Array [
-                                  "
-  color: black;
-  text-decoration: none;
-  display: block;
-  height: 38px;
-  font-family: nunito, helvetica;
-
-  &:hover {
-    color: purple;
-    text-decoration: none;
-    font-size: 20px; 
-  }
-
-  &.active {
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-  }
-",
-                                ],
-                              },
-                              "displayName": "Styled(NavLink)",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": [Function],
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          to="/post/immutable"
-                        >
-                          <NavLink
-                            className="sc-bwzfXH jPfoIJ"
-                            to="/post/immutable"
-                          >
-                            <Route
-                              path="\\\\/post\\\\/immutable"
-                            >
-                              <Link
-                                aria-current={null}
-                                className="sc-bwzfXH jPfoIJ"
-                                to="/post/immutable"
-                              >
-                                <a
-                                  aria-current={null}
-                                  className="sc-bwzfXH jPfoIJ"
-                                  href="/post/immutable"
-                                  onClick={[Function]}
-                                >
-                                  Immutable
-                                </a>
-                              </Link>
-                            </Route>
-                          </NavLink>
-                        </StyledComponent>
-                      </Styled(NavLink)>
-                    </div>
-                  </div>
-                </nav>
-              </StyledComponent>
-            </styled.nav>
-          </Sidebar>
-          <Page>
-            <section
-              className="col-11 col-lg-9 offset-lg-1 pt-5 mb-5"
-            >
-              <Switch>
-                <Route
-                  component={[Function]}
-                  computedMatch={
-                    Object {
-                      "isExact": true,
-                      "params": Object {},
-                      "path": "/",
-                      "url": "/",
-                    }
-                  }
-                  exact={true}
-                  location={
-                    Object {
-                      "hash": "",
-                      "key": "testKey",
-                      "pathname": "/",
-                      "search": "",
-                    }
-                  }
-                  path="/"
-                >
-                  <HomePage
-                    history={
-                      Object {
-                        "action": "POP",
-                        "block": [Function],
-                        "canGo": [Function],
-                        "createHref": [Function],
-                        "entries": Array [
-                          Object {
-                            "hash": "",
-                            "key": "testKey",
-                            "pathname": "/",
-                            "search": "",
-                          },
-                        ],
-                        "go": [Function],
-                        "goBack": [Function],
-                        "goForward": [Function],
-                        "index": 0,
-                        "length": 1,
-                        "listen": [Function],
-                        "location": Object {
-                          "hash": "",
-                          "key": "testKey",
-                          "pathname": "/",
-                          "search": "",
-                        },
-                        "push": [Function],
-                        "replace": [Function],
-                      }
-                    }
-                    location={
-                      Object {
-                        "hash": "",
-                        "key": "testKey",
-                        "pathname": "/",
-                        "search": "",
-                      }
-                    }
-                    match={
-                      Object {
-                        "isExact": true,
-                        "params": Object {},
-                        "path": "/",
-                        "url": "/",
-                      }
-                    }
-                  >
+                  <GameInfo>
                     <div>
                       <h1>
-                        Home Page
+                        GameInfo
                       </h1>
                     </div>
-                  </HomePage>
-                </Route>
-              </Switch>
-            </section>
-          </Page>
+                  </GameInfo>
+                  <Hint>
+                    <div>
+                      <h1>
+                        Hint
+                      </h1>
+                    </div>
+                  </Hint>
+                  <ProblemBox>
+                    <div>
+                      <h1>
+                        ProblemBox
+                      </h1>
+                    </div>
+                  </ProblemBox>
+                  <SolutionInputBox>
+                    <div>
+                      <h1>
+                        SolutionInputBox
+                      </h1>
+                    </div>
+                  </SolutionInputBox>
+                  <ResultDisplay>
+                    <div>
+                      <h1>
+                        ResultDisplay
+                      </h1>
+                    </div>
+                  </ResultDisplay>
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </GameScreen>
+          <styled.div
+            className="col-md-3"
+          >
+            <StyledComponent
+              className="col-md-3"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "kMVulJ",
+                    "rules": Array [
+                      "
+  background: #999999;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="col-md-3 sc-bwzfXH kMVulJ"
+              />
+            </StyledComponent>
+          </styled.div>
         </div>
       </div>
     </PageLayout>
