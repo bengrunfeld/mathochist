@@ -5,7 +5,7 @@ import { GameTimeContainer, Caption } from './styles'
 
 const GameTime = ({ time }) => (
   <GameTimeContainer>
-    <StatsBox data={time} />
+    <StatsBox data={time} statsType='time' />
     <Caption>Time</Caption>
   </GameTimeContainer>
 )

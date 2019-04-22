@@ -8,7 +8,7 @@ import ResultDisplay from '../ResultDisplay'
 import { Screen } from './styles'
 
 const GameScreen = () => (
-  <Screen className='col-md-6'>
+  <Screen className='col-lg-6'>
     <GameInfo />
     <Hint />
     <ProblemBox />

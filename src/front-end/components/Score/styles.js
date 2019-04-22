@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-const GameTimeContainer = styled.div`
+const ScoreContainer = styled.div`
   display: inline-block;
-  margin-right: 35px;
 `
 
 const Caption = styled.h4`
@@ -11,4 +10,4 @@ const Caption = styled.h4`
   margin-top: 5px;
 `
 
-export { GameTimeContainer, Caption }
+export { ScoreContainer, Caption }
