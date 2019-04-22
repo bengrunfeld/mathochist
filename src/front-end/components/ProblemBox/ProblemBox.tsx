@@ -1,13 +1,20 @@
 import React from 'react'
-import Box from '../Box'
+import PropTypes from 'prop-types'
 
-import { ProblemBoxContainer, Caption } from './styles'
+import { BoxContainer, BoxText } from './styles'
 
-const ProblemBox = () => (
-  <ProblemBoxContainer>
-    <Box problem='22 x 13' />
-    <Caption>Solve</Caption>
-  </ProblemBoxContainer>
+const ProblemBox = ({ problem }) => (
+  <BoxContainer>
+    <BoxText>{problem}</BoxText>
+  </BoxContainer>
 )
+
+ProblemBox.defaultProps = {
+  problem: '1 x 1'
+}
+
+ProblemBox.propTypes = {
+  problem: PropTypes.string
+}
 
 export default ProblemBox

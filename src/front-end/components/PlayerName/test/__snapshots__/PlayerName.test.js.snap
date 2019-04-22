@@ -1,11 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProblemBox /> matches the snapshot 1`] = `
-<ProblemBox
-  problem="1 x 1"
+exports[`<PlayerName /> matches the snapshot 1`] = `
+<PlayerName
+  playerName="Beni"
 >
-  <styled.div>
+  <styled.div
+    className="col-6"
+  >
     <StyledComponent
+      className="col-6"
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -13,10 +16,10 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": true,
-            "lastClassName": "eQpKtj",
+            "lastClassName": "fARYbS",
             "rules": Array [
               "
-  border: 2px solid #3e3e3e;
+  padding-left: 45px !important;
 ",
             ],
           },
@@ -33,9 +36,9 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="sc-bdVaJa eQpKtj"
+        className="col-6 sc-bdVaJa fARYbS"
       >
-        <styled.p>
+        <styled.h5>
           <StyledComponent
             forwardedComponent={
               Object {
@@ -44,21 +47,56 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bwzfXH",
                   "isStatic": true,
-                  "lastClassName": "bFdvvq",
+                  "lastClassName": "jszCaR",
+                  "rules": Array [
+                    "
+  font-size: 18px;
+  font-weight: 300;
+",
+                  ],
+                },
+                "displayName": "styled.h5",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "h5",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <h5
+              className="sc-bwzfXH jszCaR"
+            >
+              Player:
+            </h5>
+          </StyledComponent>
+        </styled.h5>
+        <styled.p>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "ezsysF",
                   "rules": Array [
                     "
   font-size: 40px;
-  color: #3e3e3e;
-  text-align: center;
-  position: relative;
-  top: 8px;
+  color: #3c78d8;
+  text-transform: uppercase;
+  margin-left: -2px;
 ",
                   ],
                 },
                 "displayName": "styled.p",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
+                "styledComponentId": "sc-htpNat",
                 "target": "p",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -68,14 +106,14 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
             forwardedRef={null}
           >
             <p
-              className="sc-bwzfXH bFdvvq"
+              className="sc-htpNat ezsysF"
             >
-              1 x 1
+              Beni
             </p>
           </StyledComponent>
         </styled.p>
       </div>
     </StyledComponent>
   </styled.div>
-</ProblemBox>
+</PlayerName>
 `;

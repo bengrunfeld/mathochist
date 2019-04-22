@@ -1,11 +1,15 @@
 import s from 'styled-components'
 
-const ProblemBoxContainer = s.div`
-  padding: 15px;
+const BoxContainer = s.div`
+  border: 2px solid #3e3e3e;
 `
 
-const Caption = s.p`
-  font-size: 18px;
+const BoxText = s.p`
+  font-size: 40px;
+  color: #3e3e3e;
+  text-align: center;
+  position: relative;
+  top: 8px;
 `
 
-export { ProblemBoxContainer, Caption }
+export { BoxContainer, BoxText }

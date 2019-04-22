@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import GameInfo from '../GameInfo'
 import Hint from '../Hint'
-import ProblemBox from '../ProblemBox'
+import Problem from '../Problem'
 import SolutionInputBox from '../SolutionInputBox'
 import ResultDisplay from '../ResultDisplay'
 
@@ -13,7 +13,7 @@ const GameScreen = ({ width }) => (
   <Screen className={width}>
     <GameInfo />
     <Hint />
-    <ProblemBox />
+    <Problem />
     <SolutionInputBox />
     <ResultDisplay />
   </Screen>

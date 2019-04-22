@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProblemBox /> matches the snapshot 1`] = `
-<ProblemBox
-  problem="1 x 1"
+exports[`<StatsBox /> matches the snapshot 1`] = `
+<StatsBox
+  data="0"
+  statsType="defaultStatsType"
 >
   <styled.div>
     <StyledComponent
@@ -13,10 +14,15 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": true,
-            "lastClassName": "eQpKtj",
+            "lastClassName": "iKOMUo",
             "rules": Array [
               "
-  border: 2px solid #3e3e3e;
+  display: inline-block;
+  background: #b7b7b7;
+  padding: 6px;
+  border: 2px solid black;
+  min-width: 70px;
+  border-radius: 5px;
 ",
             ],
           },
@@ -33,9 +39,11 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="sc-bdVaJa eQpKtj"
+        className="sc-bdVaJa iKOMUo"
       >
-        <styled.p>
+        <styled.p
+          type="defaultStatsType"
+        >
           <StyledComponent
             forwardedComponent={
               Object {
@@ -43,15 +51,20 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bwzfXH",
-                  "isStatic": true,
-                  "lastClassName": "bFdvvq",
+                  "isStatic": false,
+                  "lastClassName": "hZcyxd",
                   "rules": Array [
                     "
-  font-size: 40px;
-  color: #3e3e3e;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Nunito;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  position: relative;
-  top: 8px;
+
+  color: ",
+                    [Function],
+                    ";
 ",
                   ],
                 },
@@ -66,16 +79,18 @@ exports[`<ProblemBox /> matches the snapshot 1`] = `
               }
             }
             forwardedRef={null}
+            type="defaultStatsType"
           >
             <p
-              className="sc-bwzfXH bFdvvq"
+              className="sc-bwzfXH hZcyxd"
+              type="defaultStatsType"
             >
-              1 x 1
+              0
             </p>
           </StyledComponent>
         </styled.p>
       </div>
     </StyledComponent>
   </styled.div>
-</ProblemBox>
+</StatsBox>
 `;
