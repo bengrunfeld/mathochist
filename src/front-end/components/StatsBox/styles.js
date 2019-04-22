@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Box = styled.div`
   display: inline-block;
   background: #b7b7b7;
-  padding: 10px;
+  padding: 6px;
   border: 2px solid black;
   min-width: 70px;
   border-radius: 5px;

@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { HintContainer, HintText } from './styles'
+
 const Hint = () => (
-  <div>
-    <h1>Hint</h1>
-  </div>
+  <HintContainer>
+    <HintText>Type your answer and hit enter key or return button</HintText>
+  </HintContainer>
 )
 
 export default Hint
