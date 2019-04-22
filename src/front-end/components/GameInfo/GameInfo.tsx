@@ -3,11 +3,13 @@ import React from 'react'
 import PlayerName from '../PlayerName'
 import GameStats from '../GameStats'
 
+import { GameInfoContainer } from './styles'
+
 const GameInfo = () => (
-  <div className='row'>
+  <GameInfoContainer className='row'>
     <PlayerName />
     <GameStats />
-  </div>
+  </GameInfoContainer>
 )
 
 export default GameInfo
