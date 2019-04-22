@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameTime /> matches the snapshot 1`] = `
+<GameTime>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "dmRLcz",
+            "rules": Array [
+              "
+  display: inline-block;
+  margin-right: 35px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-htpNat dmRLcz"
+      >
+        <StatsBox
+          data="0"
+          statsType="time"
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": true,
+                    "lastClassName": "iKOMUo",
+                    "rules": Array [
+                      "
+  display: inline-block;
+  background: #b7b7b7;
+  padding: 6px;
+  border: 2px solid black;
+  min-width: 70px;
+  border-radius: 5px;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bdVaJa iKOMUo"
+              >
+                <styled.p
+                  type="time"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": false,
+                          "lastClassName": "jlhPjW",
+                          "rules": Array [
+                            "
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Nunito;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  color: ",
+                            [Function],
+                            ";
+",
+                          ],
+                        },
+                        "displayName": "styled.p",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": "p",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    type="time"
+                  >
+                    <p
+                      className="sc-bwzfXH jlhPjW"
+                      type="time"
+                    >
+                      0
+                    </p>
+                  </StyledComponent>
+                </styled.p>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </StatsBox>
+        <styled.h4>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "iDhuiM",
+                  "rules": Array [
+                    "
+  text-align: center;
+  font-size: 22px;
+  margin-top: 5px;
+",
+                  ],
+                },
+                "displayName": "styled.h4",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "h4",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <h4
+              className="sc-bxivhb iDhuiM"
+            >
+              Time
+            </h4>
+          </StyledComponent>
+        </styled.h4>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</GameTime>
+`;

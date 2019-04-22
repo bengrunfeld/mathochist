@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StatsBox /> matches the snapshot 1`] = `
+<StatsBox
+  data="0"
+  statsType="defaultStatsType"
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "iKOMUo",
+            "rules": Array [
+              "
+  display: inline-block;
+  background: #b7b7b7;
+  padding: 6px;
+  border: 2px solid black;
+  min-width: 70px;
+  border-radius: 5px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bdVaJa iKOMUo"
+      >
+        <styled.p
+          type="defaultStatsType"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "hZcyxd",
+                  "rules": Array [
+                    "
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Nunito;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  color: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            type="defaultStatsType"
+          >
+            <p
+              className="sc-bwzfXH hZcyxd"
+              type="defaultStatsType"
+            >
+              0
+            </p>
+          </StyledComponent>
+        </styled.p>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</StatsBox>
+`;

@@ -44,156 +44,93 @@ exports[`<Navbar /> matches the snapshot 1`] = `
     }
   >
     <Navbar>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark bg-dark"
+      <styled.nav
+        className="navbar navbar-expand-lg"
       >
-        <Styled(Link)
-          className="navbar-brand ml-2"
-          to="/"
-        >
-          <StyledComponent
-            className="navbar-brand ml-2"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": true,
-                  "lastClassName": "buxIHh",
-                  "rules": Array [
-                    "
-  font-family: comfortaa, helvetica;
-  font-size: 26px !important;
+        <StyledComponent
+          className="navbar navbar-expand-lg"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": true,
+                "lastClassName": "hZIOEX",
+                "rules": Array [
+                  "
+  background: #0b5394 !important;
+  height: 45px;
 ",
-                  ],
-                },
-                "displayName": "Styled(Link)",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
+                ],
+              },
+              "displayName": "styled.nav",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "nav",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
             }
-            forwardedRef={null}
-            to="/"
+          }
+          forwardedRef={null}
+        >
+          <nav
+            className="navbar navbar-expand-lg sc-bwzfXH hZIOEX"
           >
-            <Link
-              className="navbar-brand ml-2 sc-bdVaJa buxIHh"
+            <Styled(Link)
+              className="navbar-brand ml-2"
               to="/"
             >
-              <a
-                className="navbar-brand ml-2 sc-bdVaJa buxIHh"
-                href="/"
-                onClick={[Function]}
+              <StyledComponent
+                className="navbar-brand ml-2"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": true,
+                      "lastClassName": "oCpOW",
+                      "rules": Array [
+                        "
+  font-family: comfortaa, helvetica;
+  font-size: 20px !important;
+  color: white;
+",
+                      ],
+                    },
+                    "displayName": "Styled(Link)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                to="/"
               >
-                Ben Grunfeld
-              </a>
-            </Link>
-          </StyledComponent>
-        </Styled(Link)>
-        <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          className="navbar-toggler"
-          data-target="#navbarSupportedContent"
-          data-toggle="collapse"
-          type="button"
-        >
-          <span
-            className="navbar-toggler-icon"
-          />
-        </button>
-        <div
-          className="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul
-            className="navbar-nav mr-auto d-lg-none"
-          >
-            <li
-              className="nav-item active"
-            >
-              <a
-                className="nav-link"
-                href="#"
-              >
-                Home 
-                <span
-                  className="sr-only"
+                <Link
+                  className="navbar-brand ml-2 sc-bdVaJa oCpOW"
+                  to="/"
                 >
-                  (current)
-                </span>
-              </a>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <a
-                className="nav-link"
-                href="#"
-              >
-                Link
-              </a>
-            </li>
-            <li
-              className="nav-item dropdown"
-            >
-              <a
-                aria-expanded="false"
-                aria-haspopup="true"
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-              >
-                Dropdown
-              </a>
-              <div
-                aria-labelledby="navbarDropdown"
-                className="dropdown-menu"
-              >
-                <a
-                  className="dropdown-item"
-                  href="#"
-                >
-                  Action
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="#"
-                >
-                  Another action
-                </a>
-                <div
-                  className="dropdown-divider"
-                />
-                <a
-                  className="dropdown-item"
-                  href="#"
-                >
-                  Something else here
-                </a>
-              </div>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <a
-                className="nav-link disabled"
-                href="#"
-              >
-                Disabled
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                  <a
+                    className="navbar-brand ml-2 sc-bdVaJa oCpOW"
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    Mathochist
+                  </a>
+                </Link>
+              </StyledComponent>
+            </Styled(Link)>
+          </nav>
+        </StyledComponent>
+      </styled.nav>
     </Navbar>
   </Router>
 </MemoryRouter>

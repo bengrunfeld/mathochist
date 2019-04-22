@@ -1,13 +1,13 @@
 import React from 'react'
-
-import Sidebar from '../Sidebar'
-import Page from '../Page'
+import GameScreen from '../GameScreen'
+import { Gutter } from './styles'
 
 const PageLayout = () => (
   <div className='container-fluid'>
     <div className='row'>
-      <Sidebar />
-      <Page />
+      <Gutter className='col-md-3' />
+      <GameScreen width='col-md-6' />
+      <Gutter className='col-md-3' />
     </div>
   </div>
 )

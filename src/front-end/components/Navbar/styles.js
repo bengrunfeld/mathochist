@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom'
 
 const Logo = styled(Link)`
   font-family: comfortaa, helvetica;
-  font-size: 26px !important;
+  font-size: 20px !important;
+  color: white;
 `
 
-export { Logo }
+const NavbarContainer = styled.nav`
+  background: #0b5394 !important;
+  height: 45px;
+`
+
+export { Logo, NavbarContainer }

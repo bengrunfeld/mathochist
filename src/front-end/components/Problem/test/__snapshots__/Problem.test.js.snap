@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Problem /> matches the snapshot 1`] = `
+<Problem>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "fUOtYD",
+            "rules": Array [
+              "
+  padding: 15px 45px 0 45px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-htpNat fUOtYD"
+      >
+        <styled.p>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "eTkJRX",
+                  "rules": Array [
+                    "
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #3e3e3e
+  padding-left: 10px;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <p
+              className="sc-bxivhb eTkJRX"
+            >
+              Solve
+            </p>
+          </StyledComponent>
+        </styled.p>
+        <ProblemBox
+          problem="22 x 13"
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": true,
+                    "lastClassName": "eQpKtj",
+                    "rules": Array [
+                      "
+  border: 2px solid #3e3e3e;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bdVaJa eQpKtj"
+              >
+                <styled.p>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bwzfXH",
+                          "isStatic": true,
+                          "lastClassName": "bFdvvq",
+                          "rules": Array [
+                            "
+  font-size: 40px;
+  color: #3e3e3e;
+  text-align: center;
+  position: relative;
+  top: 8px;
+",
+                          ],
+                        },
+                        "displayName": "styled.p",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bwzfXH",
+                        "target": "p",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <p
+                      className="sc-bwzfXH bFdvvq"
+                    >
+                      22 x 13
+                    </p>
+                  </StyledComponent>
+                </styled.p>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </ProblemBox>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Problem>
+`;
