@@ -1,9 +1,13 @@
 import React from 'react'
+import Box from '../Box'
+
+import { ProblemBoxContainer, Caption } from './styles'
 
 const ProblemBox = () => (
-  <div>
-    <h1>ProblemBox</h1>
-  </div>
+  <ProblemBoxContainer>
+    <Box problem='22 x 13' />
+    <Caption>Solve</Caption>
+  </ProblemBoxContainer>
 )
 
 export default ProblemBox
