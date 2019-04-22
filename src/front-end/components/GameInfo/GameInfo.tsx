@@ -1,14 +1,12 @@
 import React from 'react'
 
 import PlayerName from '../PlayerName'
-import GameTime from '../GameTime'
-import Score from '../Score'
+import GameStats from '../GameStats'
 
 const GameInfo = () => (
-  <div>
+  <div className='row'>
     <PlayerName />
-    <GameTime />
-    <Score />
+    <GameStats />
   </div>
 )
 

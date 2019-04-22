@@ -1,8 +1,11 @@
 import React from 'react'
 
-const GameTime = () => (
+import StatsBox from '../StatsBox'
+
+const GameTime = ({ time }) => (
   <div>
-    <h1>GameTime</h1>
+    <StatsBox data={time} />
+    <h4>Time</h4>
   </div>
 )
 
