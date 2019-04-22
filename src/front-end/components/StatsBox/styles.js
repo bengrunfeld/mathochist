@@ -5,6 +5,7 @@ const Box = styled.div`
   background: #b7b7b7;
   padding: 10px;
   border: 2px solid black;
+  min-width: 70px;
 `
 
 const BoxData = styled.p`
@@ -13,6 +14,7 @@ const BoxData = styled.p`
   font-family: Nunito;
   margin: 0;
   padding: 0;
+  text-align: center;
 
   color: ${props => {
     if (props.type === 'score') return 'darkred'

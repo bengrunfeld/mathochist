@@ -10,7 +10,7 @@ const StatsBox = ({ data, statsType }) => (
 )
 
 StatsBox.defaultProps = {
-  data: '000',
+  data: '0',
   statsType: 'defaultStatsType'
 }
 

@@ -1,12 +1,13 @@
 import React from 'react'
-
 import StatsBox from '../StatsBox'
 
+import { GameTimeContainer, Caption } from './styles'
+
 const GameTime = ({ time }) => (
-  <div>
+  <GameTimeContainer>
     <StatsBox data={time} />
-    <h4>Time</h4>
-  </div>
+    <Caption>Time</Caption>
+  </GameTimeContainer>
 )
 
 export default GameTime
