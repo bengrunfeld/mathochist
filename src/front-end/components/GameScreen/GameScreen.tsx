@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import GameInfo from '../GameInfo'
 import Hint from '../Hint'
 import Problem from '../Problem'
-import SolutionInputBox from '../SolutionInputBox'
+import SolutionContainer from '../SolutionContainer'
 import ResultDisplay from '../ResultDisplay'
 
 import { Screen } from './styles'
@@ -14,7 +14,7 @@ const GameScreen = ({ width }) => (
     <GameInfo />
     <Hint />
     <Problem />
-    <SolutionInputBox />
+    <SolutionContainer />
     <ResultDisplay />
   </Screen>
 )
