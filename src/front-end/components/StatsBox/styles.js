@@ -17,8 +17,8 @@ const BoxData = styled.p`
   text-align: center;
 
   color: ${props => {
-    if (props.type === 'time') return 'darkred'
-    if (props.type === 'score') return 'blue'
+    if (props.type === 'time') return '#990500'
+    if (props.type === 'score') return '#3c78d8'
     return 'black'
   }};
 `

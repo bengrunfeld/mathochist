@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { Title, Name } from './styles'
+
 const PlayerName = ({ playerName }) => (
   <div className='col-6'>
-    <h3>Player</h3>
-    <p>{playerName}</p>
+    <Title>Player:</Title>
+    <Name>{playerName}</Name>
   </div>
 )
 
 PlayerName.defaultProps = {
-  playerName: 'Name not set...'
+  playerName: 'Beynish'
 }
 
 PlayerName.propTypes = {
