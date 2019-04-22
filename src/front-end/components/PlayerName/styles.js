@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-const PlayerNameContainer = styled.div`
-  padding-left: 45px !important;
-`
+const PlayerNameContainer = styled.div``
 
 const Title = styled.h5`
   font-size: 18px;

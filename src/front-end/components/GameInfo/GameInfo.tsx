@@ -6,7 +6,7 @@ import GameStats from '../GameStats'
 import { GameInfoContainer } from './styles'
 
 const GameInfo = () => (
-  <GameInfoContainer className='row'>
+  <GameInfoContainer className='row no-gutters'>
     <PlayerName />
     <GameStats />
   </GameInfoContainer>
