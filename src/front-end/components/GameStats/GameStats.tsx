@@ -3,11 +3,13 @@ import React from 'react'
 import GameTime from '../GameTime'
 import Score from '../Score'
 
+import { GameStatsContainer } from './styles'
+
 const GameStats = () => (
-  <div className='col-6'>
+  <GameStatsContainer className='col-6 d-flex justify-content-end'>
     <GameTime />
     <Score />
-  </div>
+  </GameStatsContainer>
 )
 
 export default GameStats
