@@ -1,8 +1,14 @@
 import React from 'react'
 
+import PlayerName from '../PlayerName'
+import GameTime from '../GameTime'
+import Score from '../Score'
+
 const GameInfo = () => (
   <div>
-    <h1>GameInfo</h1>
+    <PlayerName />
+    <GameTime />
+    <Score />
   </div>
 )
 
