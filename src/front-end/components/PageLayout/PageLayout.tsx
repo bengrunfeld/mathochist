@@ -5,9 +5,9 @@ import { Gutter } from './styles'
 const PageLayout = () => (
   <div className='container-fluid'>
     <div className='row'>
-      <Gutter className='col-lg-3' />
-      <GameScreen />
-      <Gutter className='col-lg-3' />
+      <Gutter className='col-md-3' />
+      <GameScreen width='col-md-6' />
+      <Gutter className='col-md-3' />
     </div>
   </div>
 )

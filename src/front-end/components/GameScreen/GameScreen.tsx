@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import GameInfo from '../GameInfo'
 import Hint from '../Hint'
 import ProblemBox from '../ProblemBox'
@@ -7,8 +9,8 @@ import ResultDisplay from '../ResultDisplay'
 
 import { Screen } from './styles'
 
-const GameScreen = () => (
-  <Screen className='col-lg-6'>
+const GameScreen = ({ width }) => (
+  <Screen className={width}>
     <GameInfo />
     <Hint />
     <ProblemBox />
@@ -16,5 +18,9 @@ const GameScreen = () => (
     <ResultDisplay />
   </Screen>
 )
+
+GameScreen.propTypes = {
+  width: PropTypes.string
+}
 
 export default GameScreen
