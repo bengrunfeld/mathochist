@@ -5,7 +5,7 @@ import GameInfo from '../GameInfo'
 import Hint from '../Hint'
 import Problem from '../Problem'
 import SolutionContainer from '../SolutionContainer'
-import ResultDisplay from '../ResultDisplay'
+import Result from '../Result'
 
 import { Screen } from './styles'
 
@@ -15,7 +15,7 @@ const GameScreen = ({ width }) => (
     <Hint />
     <Problem />
     <SolutionContainer />
-    <ResultDisplay />
+    <Result />
   </Screen>
 )
 
