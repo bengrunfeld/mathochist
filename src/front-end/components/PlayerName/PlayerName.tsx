@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Title, Name } from './styles'
+import { PlayerNameContainer, Title, Name } from './styles'
 
 const PlayerName = ({ playerName }) => (
-  <div className='col-6'>
+  <PlayerNameContainer className='col-6'>
     <Title>Player:</Title>
     <Name>{playerName}</Name>
-  </div>
+  </PlayerNameContainer>
 )
 
 PlayerName.defaultProps = {
-  playerName: 'Beynish'
+  playerName: 'Beni'
 }
 
 PlayerName.propTypes = {

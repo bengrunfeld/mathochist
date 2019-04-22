@@ -16,7 +16,7 @@ Score.defaultProps = {
   playerScore: '0'
 }
 
-Score.PropTypes = {
+Score.propTypes = {
   playerScore: PropTypes.string
 }
 

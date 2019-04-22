@@ -6,6 +6,7 @@ const Box = styled.div`
   padding: 10px;
   border: 2px solid black;
   min-width: 70px;
+  border-radius: 5px;
 `
 
 const BoxData = styled.p`
