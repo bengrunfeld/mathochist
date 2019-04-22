@@ -12,7 +12,7 @@ const Submit = s.div`
   border-bottom: 17px solid transparent;
   border-left: 17px solid white;
   position: relative;
-  left: 47px;
+  left: 43%;
 `
 
 export { BoxContainer, Submit }
