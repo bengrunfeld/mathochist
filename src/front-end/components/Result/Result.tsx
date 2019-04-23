@@ -15,7 +15,7 @@ const Result = ({ result, show }) => (
 )
 
 Result.defaultProps = {
-  result: 'correct',
+  result: 'wrong',
   show: true
 }
 
