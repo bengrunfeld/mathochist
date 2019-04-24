@@ -4,6 +4,8 @@ import PageLayout from '../PageLayout'
 import Footer from '../Footer'
 import { Map } from 'immutable'
 
+import { connect } from 'react-redux'
+
 import './styles.css'
 
 import 'bootstrap'
@@ -13,12 +15,15 @@ import '../../assets/css/fonts.css'
 import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-const App = () => (
+const App = ({ time }) => (
   <div>
+    <h3>The time is: {time}</h3>
     <Navbar />
     <PageLayout />
     <Footer />
   </div>
 )
 
-export default App
+const mapStateToProps = state => ({ time: state.time })
+
+export default connect(mapStateToProps)(App)

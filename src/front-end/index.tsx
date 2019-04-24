@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Router from './components/Router'
+import ProviderWrapper from './components/ProviderWrapper'
 
 ReactDOM.render(
-  <Router />,
+  <ProviderWrapper />,
   document.getElementById('react-container') // eslint-disable-line no-undef
 )
 
