@@ -1,11 +1,8 @@
 import { createStore, combineReducers } from 'redux'
 // import reducers from '../containers'
+import reducers from '../containers/time/reducers'
 
-const time = (state = 0, action) =>
-  action.type === 'update' ? action.payload : state
-
-const configureStore = initialState =>
-  createStore(combineReducers({ time }), initialState)
+const configureStore = initialState => createStore(reducers, initialState)
 
 export default configureStore
 

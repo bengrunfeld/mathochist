@@ -26,4 +26,8 @@ const App = ({ time }) => (
 
 const mapStateToProps = state => ({ time: state.time })
 
+const mapDispatchToProps = {
+  fetchData: 'hello'
+}
+
 export default connect(mapStateToProps)(App)
