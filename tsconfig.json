@@ -10,10 +10,5 @@
     "esModuleInterop": true,
     "typeRoots": ["./node_modules/@types/"]
   },
-  "awesomeTypescriptLoaderOptions": {
-    "useBabel": true,
-    "useCache": true,
-    "babelCore": "@babel/core" // needed for Babel v7
-  },
   "include": ["./src/**/*"]
 }

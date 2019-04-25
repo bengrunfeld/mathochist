@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -22,6 +23,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // Eslint
       {
         enforce: 'pre',
         test: /\.js$/,
@@ -34,8 +36,23 @@ module.exports = {
           fix: true
         }
       },
+
+      // ForkTsCheckerWebpackPlugin
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {
+          // disable type checker - we will use it in fork plugin
+          transpileOnly: true
+        }
+      },
+
+      // Plain ts-loader config, when using without ForkTsCheckerWebpackPlugin.
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      // { test: /\.tsx?$/, loader: 'ts-loader' },
+
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+      // { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
@@ -85,6 +102,7 @@ module.exports = {
       template: './src/front-end/assets/html/index.html',
       filename: './index.html',
       excludeChunks: ['server']
-    })
+    }),
+    new ForkTsCheckerWebpackPlugin()
   ]
 }

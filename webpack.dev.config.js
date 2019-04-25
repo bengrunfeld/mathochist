@@ -1,8 +1,9 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   entry: {
@@ -26,6 +27,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // Eslint
       {
         enforce: 'pre',
         test: /\.js$/,
@@ -37,8 +39,23 @@ module.exports = {
           failOnWarning: false
         }
       },
+
+      // ForkTsCheckerWebpackPlugin
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {
+          // disable type checker - we will use it in fork plugin
+          transpileOnly: true
+        }
+      },
+
+      // Plain ts-loader config, when using without ForkTsCheckerWebpackPlugin.
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      // { test: /\.tsx?$/, loader: 'ts-loader' },
+
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+      // { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
@@ -90,7 +107,8 @@ module.exports = {
       excludeChunks: ['server']
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
+    new ForkTsCheckerWebpackPlugin()
     // new BundleAnalyzerPlugin()
   ]
 }
