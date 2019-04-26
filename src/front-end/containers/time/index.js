@@ -1,3 +1,3 @@
-import reducer from './reducers'
+import * as reducers from './reducers'
 
-export default reducer
+export default reducers

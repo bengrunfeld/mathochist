@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from 'redux'
-// import reducers from '../containers'
-import reducers from '../containers/time/reducers'
+import reducers from '../containers'
 
-const configureStore = initialState => createStore(reducers, initialState)
+const configureStore = initialState =>
+  createStore(combineReducers(reducers), initialState)
 
 export default configureStore
 
