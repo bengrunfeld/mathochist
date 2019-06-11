@@ -15,12 +15,10 @@ import '../../assets/css/fonts.css'
 import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-const App = ({ time, goals, points }) => (
+const App = ({ time, score }) => (
   <div>
     <h3>The time is: {time}</h3>
-    <p>
-      Score is: {goals} goals and {points} points
-    </p>
+    <p>Score is: {score}</p>
     <Navbar />
     <PageLayout />
     <Footer />
@@ -29,8 +27,7 @@ const App = ({ time, goals, points }) => (
 
 const mapStateToProps = state => ({
   time: state.time,
-  goals: state.goals,
-  points: state.points
+  score: state.score
 })
 
 const mapDispatchToProps = {

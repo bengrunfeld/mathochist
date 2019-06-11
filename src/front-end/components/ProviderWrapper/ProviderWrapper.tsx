@@ -5,7 +5,7 @@ import Router from '../Router'
 
 import configureStore from '../../store'
 
-const initialState = { time: 55, goals: 2 }
+const initialState = { time: 55, score: 2 }
 
 const store = configureStore(initialState)
 
