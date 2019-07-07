@@ -1,3 +1,2 @@
-import * as reducers from './reducers'
-
-export default reducers
+import { time } from './reducers'
+export default time

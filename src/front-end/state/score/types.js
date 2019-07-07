@@ -1,5 +1,3 @@
-const UPDATE_TIME = 'time/UPDATE_TIME'
+export const UPDATE_SCORE = 'score/UPDATE_SCORE'
 
-export default {
-  UPDATE_TIME
-}
+export default {}

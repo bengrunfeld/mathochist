@@ -1,12 +1,6 @@
-import types from './types'
+import { UPDATE_SCORE } from './types'
 
 export const score = (state = 0, action) =>
-  action.type === types.UPDATE_TIME ? action.payload : state
-
-export const winner = (state = 0, action) =>
-  action.type === types.UPDATE_TIME ? action.payload : state
-
-export const loser = (state = 0, action) =>
-  action.type === types.UPDATE_TIME ? action.payload : state
+  action.type === UPDATE_SCORE ? action.payload : state
 
 export default {}
