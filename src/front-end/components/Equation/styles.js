@@ -1,6 +1,6 @@
 import s from 'styled-components'
 
-const ProblemContainer = s.div`
+const EquationContainer = s.div`
   padding: 15px 45px 0 45px;
 `
 
@@ -11,4 +11,4 @@ const Caption = s.p`
   padding-left: 10px;
 `
 
-export { ProblemContainer, Caption }
+export { EquationContainer, Caption }

@@ -3,6 +3,7 @@ import s from 'styled-components'
 const BoxContainer = s.button`
   background: #0412eb;
   position: relative;
+  border-radius: 5px;
 `
 
 const Submit = s.div`

@@ -1,23 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { connect } from 'react-redux'
 import StatsBox from '../StatsBox'
 
 import { ScoreContainer, Caption } from './styles'
 
-const Score = ({ playerScore }) => (
+const Score = ({ score }) => (
   <ScoreContainer>
-    <StatsBox data={playerScore} statsType='score' />
+    <StatsBox data={score} />
     <Caption>Score</Caption>
   </ScoreContainer>
 )
 
+const mapStateToProps = state => ({ score: state.score })
+
 Score.defaultProps = {
-  playerScore: '0'
+  score: 0
 }
 
 Score.propTypes = {
-  playerScore: PropTypes.string
+  score: PropTypes.number
 }
 
-export default Score
+export default connect(mapStateToProps)(Score)

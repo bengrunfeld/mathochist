@@ -1,8 +1,9 @@
 import score from './score'
 import time from './time'
 import playerName from './playerName'
+import equation from './equation'
 
-export default Object.assign({}, { score }, { time }, { playerName })
+export default { score, time, playerName, equation }
 
 /* 
   Note to self... 
