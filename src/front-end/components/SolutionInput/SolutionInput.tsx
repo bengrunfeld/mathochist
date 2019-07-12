@@ -2,12 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import updateUserInput from '../../state/userInput/actions'
+// import submitSolution from '../../state/answer/actions'
 
-import { BoxContainer, BoxText } from './styles'
+import { BoxContainer, Solution } from './styles'
+
+const handleKeyPress = (key, val) => {
+  if (key === 'Enter') {
+    console.log('>>> Submit Solution', val)
+    // submitSolution()
+  }
+}
 
 const SolutionInput = ({ width, userInput, updateInput }) => (
   <BoxContainer className={width}>
-    <input type='text' value={userInput} onChange={updateInput} />
+    <Solution
+      type='text'
+      value={userInput}
+      placeholder='Enter solution...'
+      onChange={e => updateInput(e.target.value)}
+      onKeyPress={e => handleKeyPress(e.key, e.target.value)}
+    />
   </BoxContainer>
 )
 
