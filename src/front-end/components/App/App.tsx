@@ -15,19 +15,11 @@ import '../../assets/css/fonts.css'
 import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-const App = ({ time }) => (
+const App = () => (
   <div>
-    <h3>The time is: {time}</h3>
     <Navbar />
     <PageLayout />
     <Footer />
   </div>
 )
-
-const mapStateToProps = state => ({ time: state.time })
-
-const mapDispatchToProps = {
-  fetchData: 'hello'
-}
-
-export default connect(mapStateToProps)(App)
+export default App

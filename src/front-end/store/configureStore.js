@@ -1,11 +1,12 @@
 import { createStore, combineReducers } from 'redux'
-// import reducers from '../containers'
-import reducers from '../containers/time/reducers'
+import reducers from '../state'
 
-const configureStore = initialState => createStore(reducers, initialState)
+const rootReducer = combineReducers(reducers)
+
+const configureStore = initialState => createStore(rootReducer, initialState)
 
 export default configureStore
 
-// We'd do this if we wanted to implement Redux Sagas
+// If we want to implement Sagas, do the following
 // import reduxSagas from 'redux-sagas'
 // return createStore(rootReducer, initialState, applyMiddleware(reduxSagas))

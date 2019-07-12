@@ -3,31 +3,18 @@ import express from 'express'
 import fs from 'fs'
 
 const router = express.Router(),
-               app = express(),
-               DIST_DIR = __dirname,
-               HTML_FILE = path.join(DIST_DIR, 'index.html')
+  app = express(),
+  DIST_DIR = __dirname,
+  HTML_FILE = path.join(DIST_DIR, 'index.html')
 
 app.use(express.static(DIST_DIR))
 
-// Markdown docs
-router.get('/api/post/:postId', (req, res) => {
-  const content = fs.readFileSync(`./src/content/${req.params.postId}.md`, 'utf8')
-
-  res.setHeader('Content-Type', 'application/json')
-  res.json(content)
-})
-
-// Main pages - e.g. /page/about
-router.get('/page/:page', (req, res) => { res.sendFile(HTML_FILE) })
-
-// Post pages - e.g. /post/redux
-router.get('/post/:post', (req, res) => { res.sendFile(HTML_FILE) })
-
-// Assets from the Dist folder - e.g. font files
 router.get('*', (req, res) => {
-  if (req.params['0'] === '/' || req.params['0'].slice(0, 2) === '..')
-    return res.sendFile(HTML_FILE)
-  
+  if (req.params['0'] === '/' || req.params['0'].slice(0, 2) === '..') {
+    res.sendFile(HTML_FILE)
+    return
+  }
+
   res.sendFile(path.join(DIST_DIR, req.params[0].slice(1)))
 })
 

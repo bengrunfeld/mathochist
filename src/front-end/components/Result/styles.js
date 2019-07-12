@@ -8,6 +8,7 @@ const BoxContainer = s.div`
 const Box = s.div`
   width: 105px;
   height: 90px;
+  border-radius: 5px;
   background: ${props => {
     if (props.result === 'correct') return '#40af98'
     if (props.result === 'wrong') return '#990000'

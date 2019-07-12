@@ -4,7 +4,7 @@ const BoxContainer = s.div`
   border: 3px solid #666666;
   padding: 5px 0;
   background: #c9daf8;
-  border-radius: 2px;
+  border-radius: 5px;
 `
 
 const BoxText = s.p`

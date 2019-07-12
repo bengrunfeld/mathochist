@@ -9,7 +9,7 @@ const Solution = () => (
     <Caption>Solution</Caption>
     <div className='row no-gutters'>
       <SolutionBox width='col-8' />
-      <SolutionSubmit width='offset-2 col-2' />
+      <SolutionSubmit width='col-4' />
     </div>
   </SolutionContainer>
 )

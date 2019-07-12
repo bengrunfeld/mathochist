@@ -3,20 +3,18 @@ import PropTypes from 'prop-types'
 
 import { Box, BoxData } from './styles'
 
-const StatsBox = ({ data, statsType }) => (
+const StatsBox = ({ data }) => (
   <Box>
-    <BoxData type={statsType}>{data}</BoxData>
+    <BoxData>{data}</BoxData>
   </Box>
 )
 
 StatsBox.defaultProps = {
-  data: '0',
-  statsType: 'defaultStatsType'
+  data: 0
 }
 
 StatsBox.propTypes = {
-  data: PropTypes.string,
-  statsType: PropTypes.string
+  data: PropTypes.number
 }
 
 export default StatsBox
