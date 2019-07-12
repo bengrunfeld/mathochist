@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { BoxContainer, Submit } from './styles'
+import { BoxContainer, BoxButton, Triangle } from './styles'
 
 const SolutionBox = ({ width }) => (
   <BoxContainer className={width}>
-    <Submit />
+    <BoxButton className='float-right'>
+      <Triangle />
+    </BoxButton>
   </BoxContainer>
 )
 
