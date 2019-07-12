@@ -1,20 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import updateUserInput from '../../state/userInput/actions'
 
 import { BoxContainer, BoxText } from './styles'
 
-const handleUserInput = e => {
-  console.log('>>', e.target.userInput)
-}
-
-const SolutionInput = ({ width, userInput }) => (
+const SolutionInput = ({ width, userInput, updateInput }) => (
   <BoxContainer className={width}>
-    <input type='text' value={userInput} onChange={handleUserInput} />
+    <input type='text' value={userInput} onChange={updateInput} />
   </BoxContainer>
 )
 
+// updateInput.bind(this, e.target.userInput)
+
 const mapStateToProps = state => ({ userInput: state.userInput })
+
+const mapDispatchToProps = {
+  updateInput: updateUserInput
+}
 
 SolutionInput.defaultProps = {
   width: 'col-8',
@@ -26,4 +29,7 @@ SolutionInput.propTypes = {
   userInput: PropTypes.string
 }
 
-export default connect(mapStateToProps)(SolutionInput)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SolutionInput)

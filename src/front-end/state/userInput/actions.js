@@ -2,7 +2,7 @@ import { UPDATE_USER_INPUT } from './types'
 
 const updateUserInput = data => ({
   type: UPDATE_USER_INPUT,
-  payload: data
+  payload: data.target.value
 })
 
-export default { updateUserInput }
+export default updateUserInput
