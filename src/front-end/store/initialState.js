@@ -2,7 +2,7 @@ const initialState = {
   time: 60,
   score: 0,
   playerName: 'Ben G',
-  equation: '10 x 2',
+  equation: { firstArg: 10, operator: '*', secondArg: 2 },
   solutionInput: '',
   result: false
 }

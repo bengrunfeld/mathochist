@@ -23,8 +23,14 @@ const SolutionSubmit = ({ width, equation, solutionInput, dispatch }) => (
 const handleSubmitSolution = (dispatch, equation, solutionInput) => {
   if (solutionInput === '') return
 
+  console.log('1.', equation)
+
   const correctSolution = solveEquation(equation)
-  const result = correctSolution === solutionInput
+  const result = correctSolution.toString() === solutionInput
+
+  console.log('2.', correctSolution)
+  console.log('3.', solutionInput)
+  console.log('4.', result)
 
   dispatch(updateResult(result))
 }
@@ -39,8 +45,9 @@ SolutionSubmit.defaultProps = {
 }
 
 SolutionSubmit.propTypes = {
-  equation: PropTypes.string,
-  width: PropTypes.string
+  equation: PropTypes.object,
+  width: PropTypes.string,
+  solutionInput: PropTypes.string
 }
 
 export default connect(mapStateToProps)(SolutionSubmit)
