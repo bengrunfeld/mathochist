@@ -4,8 +4,7 @@ const initialState = {
   playerName: 'Ben G',
   equation: '10 x 2',
   solutionInput: '',
-  result: false,
-  equation: ''
+  result: false
 }
 
 export default initialState

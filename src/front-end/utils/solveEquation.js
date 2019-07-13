@@ -1,4 +1,4 @@
-const solveEquation = () => {
+const solveEquation = equation => {
   const solution = 2 * 2
 
   return solution
