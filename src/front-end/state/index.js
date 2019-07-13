@@ -1,21 +1,17 @@
 import equation from './equation'
-import equation from './equation'
 import playerName from './playerName'
 import result from './result'
 import score from './score'
-import solution from './solution'
 import solutionInput from './solutionInput'
 import time from './time'
 
 export default {
   equation,
-  equation,
   playerName,
   result,
   score,
-  solution
   solutionInput,
-  time,
+  time
 }
 
 /* 

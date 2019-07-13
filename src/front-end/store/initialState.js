@@ -5,8 +5,7 @@ const initialState = {
   equation: '10 x 2',
   solutionInput: '',
   result: false,
-  equation: '',
-  solution: ''
+  equation: ''
 }
 
 export default initialState
