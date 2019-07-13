@@ -23,14 +23,8 @@ const SolutionSubmit = ({ width, equation, solutionInput, dispatch }) => (
 const handleSubmitSolution = (dispatch, equation, solutionInput) => {
   if (solutionInput === '') return
 
-  console.log('1.', equation)
-
   const correctSolution = solveEquation(equation)
   const result = correctSolution.toString() === solutionInput
-
-  console.log('2.', correctSolution)
-  console.log('3.', solutionInput)
-  console.log('4.', result)
 
   dispatch(updateResult(result))
 }

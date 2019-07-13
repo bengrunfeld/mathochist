@@ -5,14 +5,19 @@ import { connect } from 'react-redux'
 import { BoxContainer, BoxText } from './styles'
 
 const EquationBox = ({ equation }) => {
-  const readableOperator = convertToReadableOperator(equation.operator)
-  const humanReadableEquation = `${equation.firstArg} ${readableOperator} ${equation.secondArg}`
+  const humanReadableEquation = makeReadable(equation)
 
   return (
     <BoxContainer>
       <BoxText>{humanReadableEquation}</BoxText>
     </BoxContainer>
   )
+}
+
+const makeReadable = equation => {
+  const readableOperator = convertToReadableOperator(equation.operator)
+
+  return `${equation.firstArg} ${readableOperator} ${equation.secondArg}`
 }
 
 const convertToReadableOperator = operator => {
