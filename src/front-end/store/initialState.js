@@ -3,7 +3,8 @@ const initialState = {
   score: 0,
   playerName: 'Ben G',
   equation: '10 x 2',
-  solutionInput: ''
+  solutionInput: '',
+  result: false
 }
 
 export default initialState

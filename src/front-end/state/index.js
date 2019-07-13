@@ -3,8 +3,9 @@ import time from './time'
 import playerName from './playerName'
 import equation from './equation'
 import solutionInput from './solutionInput'
+import result from './result'
 
-export default { score, time, playerName, equation, solutionInput }
+export default { score, time, playerName, equation, solutionInput, result }
 
 /* 
   Note to self... 
