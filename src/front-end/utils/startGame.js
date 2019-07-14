@@ -21,8 +21,6 @@ const startGame = settings => {
   // Set first equation
   const equation = generateEquation(settings)
 
-  console.log('>>> 0', equation)
-
   dispatch(updateEquation(equation))
 
   // Start timer loop

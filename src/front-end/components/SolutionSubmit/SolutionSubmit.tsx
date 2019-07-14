@@ -5,6 +5,7 @@ import { BoxContainer, BoxButton, Triangle } from './styles'
 import updateResult from '../../state/result/actions'
 import updateScore from '../../state/score/actions'
 import solveEquation from '../../utils/solveEquation'
+import handleSubmitSolution from '../../utils/handleSubmitSolution'
 
 const SolutionSubmit = ({
   width,
@@ -16,30 +17,11 @@ const SolutionSubmit = ({
   <BoxContainer className={width}>
     <BoxButton
       className='float-right'
-      onClick={handleSubmitSolution.bind(
-        this,
-        dispatch,
-        equation,
-        solutionInput,
-        score
-      )}>
+      onClick={handleSubmitSolution.bind(this, solutionInput)}>
       <Triangle />
     </BoxButton>
   </BoxContainer>
 )
-
-const handleSubmitSolution = (dispatch, equation, solutionInput, score) => {
-  if (solutionInput === '') return
-
-  const correctSolution = solveEquation(equation)
-  const result = correctSolution.toString() === solutionInput
-
-  dispatch(updateResult(result))
-
-  console.log('>>> S:', score)
-
-  if (result) dispatch(updateScore(score + 1))
-}
 
 const mapStateToProps = state => ({
   equation: state.equation,
