@@ -1,8 +1,8 @@
 import types from './types'
 
-export const updateTime = data => ({
+const updateTime = data => ({
   type: types.UPDATE_TIME,
   payload: data
 })
 
-export default {}
+export default updateTime

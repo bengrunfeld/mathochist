@@ -5,4 +5,4 @@ const updateEquation = data => ({
   payload: data
 })
 
-export default { updateEquation }
+export default updateEquation

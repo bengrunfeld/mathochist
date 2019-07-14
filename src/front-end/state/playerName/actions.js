@@ -1,8 +1,8 @@
 import { UPDATE_NAME } from './types'
 
-export const updateName = data => ({
+const updateName = data => ({
   type: UPDATE_NAME,
   payload: data
 })
 
-export default {}
+export default updateName

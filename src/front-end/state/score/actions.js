@@ -5,4 +5,4 @@ const updateScore = data => ({
   payload: data
 })
 
-export default { updateScore }
+export default updateScore
