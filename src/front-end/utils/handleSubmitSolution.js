@@ -3,6 +3,7 @@ import updateScore from '../state/score/actions'
 import updateEquation from '../state/equation/actions'
 import updateResult from '../state/result/actions'
 import generateEquation from './generateEquation'
+import updateSolutionInput from '../state/solutionInput/actions'
 import solveEquation from './solveEquation'
 
 const handleSubmitSolution = solutionInput => {
@@ -23,6 +24,8 @@ const handleSubmitSolution = solutionInput => {
   const newEquation = generateEquation(settings)
 
   dispatch(updateEquation(newEquation))
+
+  dispatch(updateSolutionInput(''))
 }
 
 export default handleSubmitSolution
