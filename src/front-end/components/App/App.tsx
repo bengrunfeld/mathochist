@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../Navbar'
 import PageLayout from '../PageLayout'
 import Footer from '../Footer'
-import { Map } from 'immutable'
 
 import { connect } from 'react-redux'
 
@@ -22,4 +21,5 @@ const App = () => (
     <Footer />
   </div>
 )
+
 export default App
