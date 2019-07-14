@@ -4,46 +4,34 @@ import { connect } from 'react-redux'
 import updateSolutionInput from '../../state/solutionInput/actions'
 import updateResult from '../../state/result/actions'
 import solveEquation from '../../utils/solveEquation'
+import handleSubmitSolution from '../../utils/handleSubmitSolution'
 
 import { BoxContainer, Solution } from './styles'
 
-const handleKeyPress = (key, solutionInput, equation, updateResult) => {
-  if (key === 'Enter') {
-    if (solutionInput === '') return
+const handleKeyPress = (key, solutionInput) => {
+  if (key !== 'Enter') return
+  if (solutionInput === '') return
 
-    const correctSolution = solveEquation(equation)
-    const result = correctSolution.toString() === solutionInput
-
-    updateResult(result)
-  }
+  handleSubmitSolution(solutionInput)
 }
 
-const SolutionInput = ({
-  width,
-  solutionInput,
-  updateSolutionInput,
-  updateResult,
-  equation
-}) => (
+const SolutionInput = ({ width, solutionInput, updateSolutionInput }) => (
   <BoxContainer className={width}>
     <Solution
       type='text'
       value={solutionInput}
       placeholder='Enter solution...'
       onChange={e => updateSolutionInput(e.target.value)}
-      onKeyPress={e =>
-        handleKeyPress(e.key, e.target.value, equation, updateResult)
-      }
+      onKeyPress={e => handleKeyPress(e.key, e.target.value)}
     />
   </BoxContainer>
 )
 
 const mapStateToProps = state => ({
-  solutionInput: state.solutionInput,
-  equation: state.equation
+  solutionInput: state.solutionInput
 })
 
-const mapDispatchToProps = { updateSolutionInput, updateResult }
+const mapDispatchToProps = { updateSolutionInput }
 
 SolutionInput.defaultProps = {
   width: 'col-8'
