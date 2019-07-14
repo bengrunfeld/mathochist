@@ -1,8 +1,8 @@
 const solveEquation = e => {
-  if (e.operator === '*') return e.firstArg * e.secondArg
-  if (e.operator === '/') return e.firstArg / e.secondArg
-  if (e.operator === '-') return e.firstArg - e.secondArg
-  if (e.operator === '+') return e.firstArg + e.secondArg
+  if (e.operator === '*') return e.operands[0] * e.operands[1]
+  if (e.operator === '/') return e.operands[0] / e.operands[1]
+  if (e.operator === '-') return e.operands[0] - e.operands[1]
+  if (e.operator === '+') return e.operands[0] + e.operands[1]
 
   throw 'ERROR: solveEquation - no valid operator given'
 }

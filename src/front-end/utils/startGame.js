@@ -12,10 +12,10 @@ const startGame = settings => {
   // Set score to zero
   dispatch(updateScore(0))
 
-  // Set time to 60
+  // Set time
   dispatch(updateTime(settings.time))
 
-  // Set result to waiting
+  // Set result to false
   dispatch(updateResult(false))
 
   // Set first equation
