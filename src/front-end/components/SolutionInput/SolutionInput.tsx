@@ -42,6 +42,7 @@ const mapStateToProps = state => ({
   solutionInput: state.solutionInput,
   equation: state.equation
 })
+
 const mapDispatchToProps = { updateSolutionInput, updateResult }
 
 SolutionInput.defaultProps = {

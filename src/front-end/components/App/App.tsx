@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import Navbar from '../Navbar'
 import PageLayout from '../PageLayout'
 import Footer from '../Footer'
@@ -15,9 +16,9 @@ import '../../assets/css/fonts.css'
 import '../../assets/css/typography.css'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-const App = () => {
+const App = ({ settings }) => {
   useEffect(() => {
-    startGame()
+    startGame(settings)
   })
 
   return (
@@ -29,4 +30,12 @@ const App = () => {
   )
 }
 
-export default App
+const mapStateToProps = state => ({
+  settings: state.settings
+})
+
+App.propTypes = {
+  settings: PropTypes.object
+}
+
+export default connect(mapStateToProps)(App)

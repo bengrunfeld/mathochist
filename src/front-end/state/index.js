@@ -2,6 +2,7 @@ import equation from './equation'
 import playerName from './playerName'
 import result from './result'
 import score from './score'
+import settings from './settings'
 import solutionInput from './solutionInput'
 import time from './time'
 
@@ -10,6 +11,7 @@ export default {
   playerName,
   result,
   score,
+  settings,
   solutionInput,
   time
 }

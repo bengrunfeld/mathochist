@@ -1,26 +1,30 @@
 import store from '../store'
+import updateScore from '../state/score/actions'
+import updateTime from '../state/time/actions'
+import updateEquation from '../state/equation/actions'
 import updateResult from '../state/result/actions'
 import generateEquation from './generateEquation'
+import startTimer from './startTimer'
 
-const startGame = timeLeft => {
+const startGame = settings => {
   const { dispatch } = store
 
   // Set score to zero
   dispatch(updateScore(0))
 
   // Set time to 60
-  dispatch(updateTime(60))
-
-  // Set first equation
-  const settings = {}
-  const equation = generateEquation(settings)
-  dispatch(updateEquation(equation))
+  dispatch(updateTime(settings.time))
 
   // Set result to waiting
   dispatch(updateResult(false))
 
+  // Set first equation
+  const equation = generateEquation(settings)
+
+  dispatch(updateEquation(equation))
+
   // Start timer loop
-  startTimer(timeLeft || 60)
+  startTimer(settings.time)
 }
 
 export default startGame
