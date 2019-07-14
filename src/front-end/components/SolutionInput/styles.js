@@ -13,6 +13,9 @@ const Solution = s.input`
   text-align: center;
   background: #d9d9d9;
   border: none;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
 `
 
 export { BoxContainer, Solution }
