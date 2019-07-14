@@ -1,10 +1,15 @@
 const solveEquation = e => {
-  if (e.operator === '*') return e.operands[0] * e.operands[1]
-  if (e.operator === '/') return e.operands[0] / e.operands[1]
-  if (e.operator === '-') return e.operands[0] - e.operands[1]
-  if (e.operator === '+') return e.operands[0] + e.operands[1]
+  console.log('>>> se:', e)
+  let result = 0
 
-  throw 'ERROR: solveEquation - no valid operator given'
+  if (e.operator === '*') result = e.operands[0] * e.operands[1]
+  if (e.operator === '/') result = e.operands[0] / e.operands[1]
+  if (e.operator === '-') result = e.operands[0] - e.operands[1]
+  if (e.operator === '+') result = e.operands[0] + e.operands[1]
+
+  console.log('>>> r:', result)
+
+  return result
 }
 
 export default solveEquation

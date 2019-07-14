@@ -1,30 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
+import makeEquationReadable from '../../utils/makeEquationReadable'
 import { BoxContainer, BoxText } from './styles'
 
 const EquationBox = ({ equation }) => {
-  const humanReadableEquation = makeReadable(equation)
+  const humanReadableEquation = makeEquationReadable(equation)
 
   return (
     <BoxContainer>
       <BoxText>{humanReadableEquation}</BoxText>
     </BoxContainer>
   )
-}
-
-const makeReadable = equation => {
-  const readableOperator = convertToReadableOperator(equation.operator)
-
-  return `${equation.firstArg} ${readableOperator} ${equation.secondArg}`
-}
-
-const convertToReadableOperator = operator => {
-  if (operator === '*') return '×'
-  if (operator === '/') return '÷'
-
-  return operator
 }
 
 const mapStateToProps = state => ({
