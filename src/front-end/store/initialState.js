@@ -1,3 +1,5 @@
+import { RANDOM_ARITHMETIC } from './constants'
+
 const initialState = {
   time: 60,
   score: 0,
@@ -7,9 +9,9 @@ const initialState = {
   result: false,
   settings: {
     numOperands: 2,
-    operator: 'arithmetic',
+    operator: RANDOM_ARITHMETIC,
     time: 60,
-    maxValue: 12
+    maxValue: 50
   }
 }
 

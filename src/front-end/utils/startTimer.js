@@ -1,5 +1,3 @@
-const startTimer = timeLeft => {
-  console.log('>>> Start Timer...', timeLeft)
-}
+const startTimer = timeLeft => {}
 
 export default startTimer
