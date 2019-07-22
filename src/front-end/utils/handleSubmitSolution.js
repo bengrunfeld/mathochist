@@ -10,11 +10,9 @@ const handleSubmitSolution = solutionInput => {
   if (solutionInput === '') return
 
   const { dispatch, getState } = store
-
   const { equation, score, settings } = getState()
 
   const correctSolution = solveEquation(equation)
-
   const result = correctSolution.toString() === solutionInput
 
   dispatch(updateResult(result))
