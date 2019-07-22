@@ -6,6 +6,7 @@ import Hint from '../Hint'
 import Equation from '../Equation'
 import SolutionContainer from '../SolutionContainer'
 import Result from '../Result'
+import StartGameModal from '../StartGameModal'
 
 import { Screen } from './styles'
 
@@ -13,6 +14,7 @@ const GameScreen = ({ width }) => (
   <Screen className={width}>
     <GameInfo />
     <Hint />
+    <StartGameModal />
     <Equation />
     <SolutionContainer />
     <Result />
