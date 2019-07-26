@@ -9,11 +9,6 @@ const Box = s.div`
   width: 105px;
   height: 90px;
   border-radius: 5px;
-  background: ${props => {
-    if (props.result === 'correct') return '#40af98'
-    if (props.result === 'wrong') return '#990000'
-    return '#40af98'
-  }};
 `
 
 const BoxText = s.p`

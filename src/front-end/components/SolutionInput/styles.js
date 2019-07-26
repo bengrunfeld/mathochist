@@ -7,12 +7,15 @@ const BoxContainer = s.div`
   border-radius: 5px;
 `
 
-const BoxText = s.p`
+const Solution = s.input`
   font-size: 40px;
   color: #434343;
   text-align: center;
-  position: relative;
-  top: 8px;
+  background: #d9d9d9;
+  border: none;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
 `
 
-export { BoxContainer, BoxText }
+export { BoxContainer, Solution }

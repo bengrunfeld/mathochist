@@ -1,9 +1,20 @@
-import score from './score'
-import time from './time'
-import playerName from './playerName'
 import equation from './equation'
+import playerName from './playerName'
+import result from './result'
+import score from './score'
+import settings from './settings'
+import solutionInput from './solutionInput'
+import time from './time'
 
-export default { score, time, playerName, equation }
+export default {
+  equation,
+  playerName,
+  result,
+  score,
+  settings,
+  solutionInput,
+  time
+}
 
 /* 
   Note to self... 
