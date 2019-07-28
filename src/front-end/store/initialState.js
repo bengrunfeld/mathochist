@@ -3,7 +3,7 @@ import { RANDOM_ARITHMETIC } from './constants'
 const initialState = {
   time: 60,
   score: 0,
-  playerName: 'Ben G',
+  playerName: 'Your name',
   equation: { operands: [1, 1], operator: '+' },
   solutionInput: '',
   result: false,
